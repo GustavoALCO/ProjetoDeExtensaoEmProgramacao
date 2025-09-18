@@ -1,0 +1,17 @@
+D:\ChatApplication\ChatApplication.Infra\bin\Debug\net8.0\ChatApplication.Infra.deps.json
+D:\ChatApplication\ChatApplication.Infra\bin\Debug\net8.0\ChatApplication.Infra.dll
+D:\ChatApplication\ChatApplication.Infra\bin\Debug\net8.0\ChatApplication.Infra.pdb
+D:\ChatApplication\ChatApplication.Infra\bin\Debug\net8.0\ChatApplication.Dommain.dll
+D:\ChatApplication\ChatApplication.Infra\bin\Debug\net8.0\ChatApplication.Dommain.pdb
+D:\ChatApplication\ChatApplication.Infra\obj\Debug\net8.0\ChatApplication.Infra.csproj.AssemblyReference.cache
+D:\ChatApplication\ChatApplication.Infra\obj\Debug\net8.0\ChatApplication.Infra.GeneratedMSBuildEditorConfig.editorconfig
+D:\ChatApplication\ChatApplication.Infra\obj\Debug\net8.0\ChatApplication.Infra.AssemblyInfoInputs.cache
+D:\ChatApplication\ChatApplication.Infra\obj\Debug\net8.0\ChatApplication.Infra.AssemblyInfo.cs
+D:\ChatApplication\ChatApplication.Infra\obj\Debug\net8.0\ChatApplication.Infra.csproj.CoreCompileInputs.cache
+D:\ChatApplication\ChatApplication.Infra\obj\Debug\net8.0\ChatAppl.0545A980.Up2Date
+D:\ChatApplication\ChatApplication.Infra\obj\Debug\net8.0\ChatApplication.Infra.dll
+D:\ChatApplication\ChatApplication.Infra\obj\Debug\net8.0\refint\ChatApplication.Infra.dll
+D:\ChatApplication\ChatApplication.Infra\obj\Debug\net8.0\ChatApplication.Infra.pdb
+D:\ChatApplication\ChatApplication.Infra\obj\Debug\net8.0\ref\ChatApplication.Infra.dll
+D:\ChatApplication\ChatApplication.Infra\bin\Debug\net8.0\ChatApplication.Infra.runtimeconfig.json
+D:\ChatApplication\ChatApplication.Infra\obj\Debug\net8.0\ChatApplication.Infra.genruntimeconfig.cache

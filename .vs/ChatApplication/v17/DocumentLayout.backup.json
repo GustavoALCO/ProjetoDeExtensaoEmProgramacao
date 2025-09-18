@@ -1,0 +1,123 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\ChatApplication\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B29A152C-EF4B-465F-9542-F1E9371CB750}|ChatApplication.Dommain\\ChatApplication.Dommain.csproj|d:\\chatapplication\\chatapplication.dommain\\interfaces\\chat\\ichatrepositorycommands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B29A152C-EF4B-465F-9542-F1E9371CB750}|ChatApplication.Dommain\\ChatApplication.Dommain.csproj|solutionrelative:chatapplication.dommain\\interfaces\\chat\\ichatrepositorycommands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B29A152C-EF4B-465F-9542-F1E9371CB750}|ChatApplication.Dommain\\ChatApplication.Dommain.csproj|d:\\chatapplication\\chatapplication.dommain\\interfaces\\chat\\ichatrepositoryquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B29A152C-EF4B-465F-9542-F1E9371CB750}|ChatApplication.Dommain\\ChatApplication.Dommain.csproj|solutionrelative:chatapplication.dommain\\interfaces\\chat\\ichatrepositoryquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B29A152C-EF4B-465F-9542-F1E9371CB750}|ChatApplication.Dommain\\ChatApplication.Dommain.csproj|d:\\chatapplication\\chatapplication.dommain\\entities\\chat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B29A152C-EF4B-465F-9542-F1E9371CB750}|ChatApplication.Dommain\\ChatApplication.Dommain.csproj|solutionrelative:chatapplication.dommain\\entities\\chat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2488F320-D0A4-4B65-A927-FF11A75F834D}|ChatApplication.Infra\\ChatApplication.Infra.csproj|d:\\chatapplication\\chatapplication.infra\\repository\\chat\\chatrepositorycommands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2488F320-D0A4-4B65-A927-FF11A75F834D}|ChatApplication.Infra\\ChatApplication.Infra.csproj|solutionrelative:chatapplication.infra\\repository\\chat\\chatrepositorycommands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CE3BFF7D-9890-4FC9-8E67-38121FBD7F8F}|ChatApplication.IOC\\ChatApplication.IOC.csproj|d:\\chatapplication\\chatapplication.ioc\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CE3BFF7D-9890-4FC9-8E67-38121FBD7F8F}|ChatApplication.IOC\\ChatApplication.IOC.csproj|solutionrelative:chatapplication.ioc\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B29A152C-EF4B-465F-9542-F1E9371CB750}|ChatApplication.Dommain\\ChatApplication.Dommain.csproj|d:\\chatapplication\\chatapplication.dommain\\entities\\userfriend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B29A152C-EF4B-465F-9542-F1E9371CB750}|ChatApplication.Dommain\\ChatApplication.Dommain.csproj|solutionrelative:chatapplication.dommain\\entities\\userfriend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IChatRepositoryQuery.cs",
+              "DocumentMoniker": "D:\\ChatApplication\\ChatApplication.Dommain\\Interfaces\\Chat\\IChatRepositoryQuery.cs",
+              "RelativeDocumentMoniker": "ChatApplication.Dommain\\Interfaces\\Chat\\IChatRepositoryQuery.cs",
+              "ToolTip": "D:\\ChatApplication\\ChatApplication.Dommain\\Interfaces\\Chat\\IChatRepositoryQuery.cs",
+              "RelativeToolTip": "ChatApplication.Dommain\\Interfaces\\Chat\\IChatRepositoryQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T17:48:28.847Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Chat.cs",
+              "DocumentMoniker": "D:\\ChatApplication\\ChatApplication.Dommain\\Entities\\Chat.cs",
+              "RelativeDocumentMoniker": "ChatApplication.Dommain\\Entities\\Chat.cs",
+              "ToolTip": "D:\\ChatApplication\\ChatApplication.Dommain\\Entities\\Chat.cs",
+              "RelativeToolTip": "ChatApplication.Dommain\\Entities\\Chat.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T17:40:17.805Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "IChatRepositoryCommands.cs",
+              "DocumentMoniker": "D:\\ChatApplication\\ChatApplication.Dommain\\Interfaces\\Chat\\IChatRepositoryCommands.cs",
+              "RelativeDocumentMoniker": "ChatApplication.Dommain\\Interfaces\\Chat\\IChatRepositoryCommands.cs",
+              "ToolTip": "D:\\ChatApplication\\ChatApplication.Dommain\\Interfaces\\Chat\\IChatRepositoryCommands.cs",
+              "RelativeToolTip": "ChatApplication.Dommain\\Interfaces\\Chat\\IChatRepositoryCommands.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T16:17:02.421Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ChatRepositoryCommands.cs",
+              "DocumentMoniker": "D:\\ChatApplication\\ChatApplication.Infra\\Repository\\Chat\\ChatRepositoryCommands.cs",
+              "RelativeDocumentMoniker": "ChatApplication.Infra\\Repository\\Chat\\ChatRepositoryCommands.cs",
+              "ToolTip": "D:\\ChatApplication\\ChatApplication.Infra\\Repository\\Chat\\ChatRepositoryCommands.cs",
+              "RelativeToolTip": "ChatApplication.Infra\\Repository\\Chat\\ChatRepositoryCommands.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T16:15:49.683Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "D:\\ChatApplication\\ChatApplication.IOC\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "ChatApplication.IOC\\DependencyInjection.cs",
+              "ToolTip": "D:\\ChatApplication\\ChatApplication.IOC\\DependencyInjection.cs",
+              "RelativeToolTip": "ChatApplication.IOC\\DependencyInjection.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T16:10:03.698Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserFriend.cs",
+              "DocumentMoniker": "D:\\ChatApplication\\ChatApplication.Dommain\\Entities\\UserFriend.cs",
+              "RelativeDocumentMoniker": "ChatApplication.Dommain\\Entities\\UserFriend.cs",
+              "ToolTip": "D:\\ChatApplication\\ChatApplication.Dommain\\Entities\\UserFriend.cs",
+              "RelativeToolTip": "ChatApplication.Dommain\\Entities\\UserFriend.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T15:51:39.083Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+D:\ChatApplication\ChatApplication.Dommain\bin\Debug\net8.0\ChatApplication.Dommain.deps.json
+D:\ChatApplication\ChatApplication.Dommain\bin\Debug\net8.0\ChatApplication.Dommain.dll
+D:\ChatApplication\ChatApplication.Dommain\bin\Debug\net8.0\ChatApplication.Dommain.pdb
+D:\ChatApplication\ChatApplication.Dommain\obj\Debug\net8.0\ChatApplication.Dommain.GeneratedMSBuildEditorConfig.editorconfig
+D:\ChatApplication\ChatApplication.Dommain\obj\Debug\net8.0\ChatApplication.Dommain.AssemblyInfoInputs.cache
+D:\ChatApplication\ChatApplication.Dommain\obj\Debug\net8.0\ChatApplication.Dommain.AssemblyInfo.cs
+D:\ChatApplication\ChatApplication.Dommain\obj\Debug\net8.0\ChatApplication.Dommain.csproj.CoreCompileInputs.cache
+D:\ChatApplication\ChatApplication.Dommain\obj\Debug\net8.0\ChatApplication.Dommain.dll
+D:\ChatApplication\ChatApplication.Dommain\obj\Debug\net8.0\refint\ChatApplication.Dommain.dll
+D:\ChatApplication\ChatApplication.Dommain\obj\Debug\net8.0\ChatApplication.Dommain.pdb
+D:\ChatApplication\ChatApplication.Dommain\obj\Debug\net8.0\ref\ChatApplication.Dommain.dll
