@@ -15,7 +15,7 @@ public class Chat
 
     public List<string> Image { get; set; }
 
-    public List<User> Users { get; set; }
+    public List<Mensage> Mensages { get; set; } 
 
-    public List<Mensage> Mensages { get; set; }
+    public ICollection<ChatUsers> ChatUsers { get; set; }
 }

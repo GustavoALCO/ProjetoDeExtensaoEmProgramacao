@@ -11,6 +11,8 @@ public class ContextDB : DbContext
 
     public DbSet<Chat> Chat { get; set; }
 
+    public DbSet<ChatUsers> chatUsers { get; set; }
+
     public DbSet<User> User { get; set; }
 
     public DbSet<UserFriend> UserFriend { get; set; }
@@ -21,12 +23,18 @@ public class ContextDB : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<Chat>()
-                .HasMany(c => c.Users);
 
-        modelBuilder.Entity<Chat>()
-                .HasMany(c => c.Mensages);
-                
+        modelBuilder.Entity<ChatUsers>()
+       .HasKey(cu => new { cu.ChatId, cu.UserId });
 
+        modelBuilder.Entity<ChatUsers>()
+            .HasOne(cu => cu.Chat)
+            .WithMany(c => c.ChatUsers)
+            .HasForeignKey(cu => cu.ChatId);
+
+        modelBuilder.Entity<ChatUsers>()
+            .HasOne(cu => cu.User)
+            .WithMany(u => u.ChatUsers)
+            .HasForeignKey(cu => cu.UserId);
     }
 }

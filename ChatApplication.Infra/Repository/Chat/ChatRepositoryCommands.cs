@@ -1,5 +1,30 @@
-﻿namespace ChatApplication.Infra.Repository.Chat;
+﻿
+using ChatApplication.Infra.Context;
 
-public class ChatRepositoryCommands
+namespace ChatApplication.Infra.Repository.Chat;
+
+public class ChatRepositoryCommands : IChatRepositoryCommands
 {
+
+    private readonly ContextDB _context;
+
+    public ChatRepositoryCommands(ContextDB contextDB)
+    {
+        _context = contextDB;
+    }
+
+    public async Task CreateChatAsync(Dommain.Entities.Chat chat)
+    {
+        await _context.Chat.AddAsync(chat);
+
+        await _context.SaveChangesAsync();
+
+    }
+
+    public async Task UpdateChatAsync(Dommain.Entities.Chat chat)
+    {
+        _context.Chat.Update(chat);
+
+        await _context.SaveChangesAsync();
+    }
 }

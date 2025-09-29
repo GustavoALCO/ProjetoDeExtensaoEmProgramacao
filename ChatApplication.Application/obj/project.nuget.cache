@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "+I2CBa52pOI=",
+  "dgSpecHash": "Cpm9gppzID0=",
   "success": true,
-  "projectFilePath": "D:\\ChatApplication\\ChatApplication.Application\\ChatApplication.Aplication.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\ChatApplication.Aplication.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\alves\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.20\\microsoft.netcore.app.ref.8.0.20.nupkg.sha512",
+    "C:\\Users\\alves\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.20\\microsoft.windowsdesktop.app.ref.8.0.20.nupkg.sha512",
+    "C:\\Users\\alves\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.20\\microsoft.aspnetcore.app.ref.8.0.20.nupkg.sha512"
+  ],
   "logs": []
 }

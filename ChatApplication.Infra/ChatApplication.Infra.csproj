@@ -7,6 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Repository\MensageStatus\**" />
+    <Compile Remove="Repository\UserFriend\**" />
+    <EmbeddedResource Remove="Repository\MensageStatus\**" />
+    <EmbeddedResource Remove="Repository\UserFriend\**" />
+    <None Remove="Repository\MensageStatus\**" />
+    <None Remove="Repository\UserFriend\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.20" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.20">
       <PrivateAssets>all</PrivateAssets>
@@ -21,8 +30,6 @@
 
   <ItemGroup>
     <Folder Include="Repository\Mensage\" />
-    <Folder Include="Repository\MensageStatus\" />
-    <Folder Include="Repository\UserFriend\" />
     <Folder Include="Repository\User\" />
   </ItemGroup>
 

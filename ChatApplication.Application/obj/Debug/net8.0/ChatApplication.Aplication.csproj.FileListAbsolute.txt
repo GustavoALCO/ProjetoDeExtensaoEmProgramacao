@@ -9,3 +9,15 @@ D:\ChatApplication\ChatApplication.Application\obj\Debug\net8.0\ChatApplication.
 D:\ChatApplication\ChatApplication.Application\obj\Debug\net8.0\refint\ChatApplication.Aplication.dll
 D:\ChatApplication\ChatApplication.Application\obj\Debug\net8.0\ChatApplication.Aplication.pdb
 D:\ChatApplication\ChatApplication.Application\obj\Debug\net8.0\ref\ChatApplication.Aplication.dll
+E:\ProjetoDeExtensaoEmProgramacao\ChatApplication.Application\bin\Debug\net8.0\ChatApplication.Aplication.deps.json
+E:\ProjetoDeExtensaoEmProgramacao\ChatApplication.Application\bin\Debug\net8.0\ChatApplication.Aplication.dll
+E:\ProjetoDeExtensaoEmProgramacao\ChatApplication.Application\bin\Debug\net8.0\ChatApplication.Aplication.pdb
+E:\ProjetoDeExtensaoEmProgramacao\ChatApplication.Application\obj\Debug\net8.0\ChatApplication.Aplication.GeneratedMSBuildEditorConfig.editorconfig
+E:\ProjetoDeExtensaoEmProgramacao\ChatApplication.Application\obj\Debug\net8.0\ChatApplication.Aplication.AssemblyInfoInputs.cache
+E:\ProjetoDeExtensaoEmProgramacao\ChatApplication.Application\obj\Debug\net8.0\ChatApplication.Aplication.AssemblyInfo.cs
+E:\ProjetoDeExtensaoEmProgramacao\ChatApplication.Application\obj\Debug\net8.0\ChatApplication.Aplication.csproj.CoreCompileInputs.cache
+E:\ProjetoDeExtensaoEmProgramacao\ChatApplication.Application\obj\Debug\net8.0\ChatApplication.Aplication.sourcelink.json
+E:\ProjetoDeExtensaoEmProgramacao\ChatApplication.Application\obj\Debug\net8.0\ChatApplication.Aplication.dll
+E:\ProjetoDeExtensaoEmProgramacao\ChatApplication.Application\obj\Debug\net8.0\refint\ChatApplication.Aplication.dll
+E:\ProjetoDeExtensaoEmProgramacao\ChatApplication.Application\obj\Debug\net8.0\ChatApplication.Aplication.pdb
+E:\ProjetoDeExtensaoEmProgramacao\ChatApplication.Application\obj\Debug\net8.0\ref\ChatApplication.Aplication.dll

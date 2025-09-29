@@ -47,6 +47,21 @@ namespace ChatApplication.Infra.Migrations
                     b.ToTable("Chat");
                 });
 
+            modelBuilder.Entity("ChatApplication.Dommain.Entities.ChatUsers", b =>
+                {
+                    b.Property<Guid>("ChatId")
+                        .HasColumnType("uuid");
+
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uuid");
+
+                    b.HasKey("ChatId", "UserId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("chatUsers");
+                });
+
             modelBuilder.Entity("ChatApplication.Dommain.Entities.Mensage", b =>
                 {
                     b.Property<int>("MensageId")
@@ -109,9 +124,6 @@ namespace ChatApplication.Infra.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uuid");
 
-                    b.Property<Guid?>("ChatId")
-                        .HasColumnType("uuid");
-
                     b.Property<DateTime>("CreateData")
                         .HasColumnType("timestamp with time zone");
 
@@ -134,8 +146,6 @@ namespace ChatApplication.Infra.Migrations
                         .HasColumnType("text");
 
                     b.HasKey("UserId");
-
-                    b.HasIndex("ChatId");
 
                     b.ToTable("User");
                 });
@@ -163,6 +173,25 @@ namespace ChatApplication.Infra.Migrations
                     b.ToTable("UserFriend");
                 });
 
+            modelBuilder.Entity("ChatApplication.Dommain.Entities.ChatUsers", b =>
+                {
+                    b.HasOne("ChatApplication.Dommain.Entities.Chat", "Chat")
+                        .WithMany("ChatUsers")
+                        .HasForeignKey("ChatId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("ChatApplication.Dommain.Entities.User", "User")
+                        .WithMany("ChatUsers")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Chat");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("ChatApplication.Dommain.Entities.Mensage", b =>
                 {
                     b.HasOne("ChatApplication.Dommain.Entities.Chat", null)
@@ -177,23 +206,21 @@ namespace ChatApplication.Infra.Migrations
                         .HasForeignKey("MensageId");
                 });
 
-            modelBuilder.Entity("ChatApplication.Dommain.Entities.User", b =>
-                {
-                    b.HasOne("ChatApplication.Dommain.Entities.Chat", null)
-                        .WithMany("Users")
-                        .HasForeignKey("ChatId");
-                });
-
             modelBuilder.Entity("ChatApplication.Dommain.Entities.Chat", b =>
                 {
-                    b.Navigation("Mensages");
+                    b.Navigation("ChatUsers");
 
-                    b.Navigation("Users");
+                    b.Navigation("Mensages");
                 });
 
             modelBuilder.Entity("ChatApplication.Dommain.Entities.Mensage", b =>
                 {
                     b.Navigation("MensageStatus");
+                });
+
+            modelBuilder.Entity("ChatApplication.Dommain.Entities.User", b =>
+                {
+                    b.Navigation("ChatUsers");
                 });
 #pragma warning restore 612, 618
         }

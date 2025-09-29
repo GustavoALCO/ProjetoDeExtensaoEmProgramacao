@@ -22,7 +22,7 @@ public static class DependencyInjection
         {
             options.UseNpgsql(
 
-                "Host=postgres-db;Port=5432;Database=authdb;Username=authuser;Password=Teste123",
+                "Host=NOME_BANCO;Port=PORTA;Database=NOMEBANCO;Username=USUARIOBANCO;Password=SENHA",
                 npgsqlOptions =>
                 {
                     npgsqlOptions.MigrationsAssembly(typeof(ContextDB).Assembly.FullName);
@@ -55,14 +55,14 @@ public static class DependencyInjection
 
     public static IServiceCollection AddMediator(this IServiceCollection services)
     {
-        services.AddMediatR(ctg => ctg.RegisterServicesFromAssembly(Assembly.Load("AuthUsers.Aplication")));
+        services.AddMediatR(ctg => ctg.RegisterServicesFromAssembly(Assembly.Load("ChatApplication.Aplication")));
 
         return services;
     }
 
     public static IServiceCollection AddFluentValidate(this IServiceCollection services)
     {
-        services.AddValidatorsFromAssembly(Assembly.Load("AuthUsers.Aplication"));
+        services.AddValidatorsFromAssembly(Assembly.Load("ChatApplication.Aplication"));
 
         return services;
     }

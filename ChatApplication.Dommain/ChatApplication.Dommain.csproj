@@ -7,10 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Interfaces\MensageStatus\" />
-    <Folder Include="Interfaces\Mensage\" />
-    <Folder Include="Interfaces\UserFriend\" />
-    <Folder Include="Interfaces\User\" />
+    <Compile Remove="Interfaces\MensageStatus\**" />
+    <Compile Remove="Interfaces\UserFriend\**" />
+    <EmbeddedResource Remove="Interfaces\MensageStatus\**" />
+    <EmbeddedResource Remove="Interfaces\UserFriend\**" />
+    <None Remove="Interfaces\MensageStatus\**" />
+    <None Remove="Interfaces\UserFriend\**" />
   </ItemGroup>
 
 </Project>

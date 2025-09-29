@@ -1,0 +1,110 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\ProjetoDeExtensaoEmProgramacao\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2488F320-D0A4-4B65-A927-FF11A75F834D}|ChatApplication.Infra\\ChatApplication.Infra.csproj|e:\\projetodeextensaoemprogramacao\\chatapplication.infra\\repository\\chat\\chatrepositoryquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2488F320-D0A4-4B65-A927-FF11A75F834D}|ChatApplication.Infra\\ChatApplication.Infra.csproj|solutionrelative:chatapplication.infra\\repository\\chat\\chatrepositoryquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B29A152C-EF4B-465F-9542-F1E9371CB750}|ChatApplication.Dommain\\ChatApplication.Dommain.csproj|e:\\projetodeextensaoemprogramacao\\chatapplication.dommain\\interfaces\\chat\\ichatrepositoryquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B29A152C-EF4B-465F-9542-F1E9371CB750}|ChatApplication.Dommain\\ChatApplication.Dommain.csproj|solutionrelative:chatapplication.dommain\\interfaces\\chat\\ichatrepositoryquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B29A152C-EF4B-465F-9542-F1E9371CB750}|ChatApplication.Dommain\\ChatApplication.Dommain.csproj|e:\\projetodeextensaoemprogramacao\\chatapplication.dommain\\interfaces\\chat\\ichatrepositorycommands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B29A152C-EF4B-465F-9542-F1E9371CB750}|ChatApplication.Dommain\\ChatApplication.Dommain.csproj|solutionrelative:chatapplication.dommain\\interfaces\\chat\\ichatrepositorycommands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B29A152C-EF4B-465F-9542-F1E9371CB750}|ChatApplication.Dommain\\ChatApplication.Dommain.csproj|e:\\projetodeextensaoemprogramacao\\chatapplication.dommain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B29A152C-EF4B-465F-9542-F1E9371CB750}|ChatApplication.Dommain\\ChatApplication.Dommain.csproj|solutionrelative:chatapplication.dommain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2488F320-D0A4-4B65-A927-FF11A75F834D}|ChatApplication.Infra\\ChatApplication.Infra.csproj|e:\\projetodeextensaoemprogramacao\\chatapplication.infra\\repository\\chat\\chatrepositorycommands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2488F320-D0A4-4B65-A927-FF11A75F834D}|ChatApplication.Infra\\ChatApplication.Infra.csproj|solutionrelative:chatapplication.infra\\repository\\chat\\chatrepositorycommands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "User.cs",
+              "DocumentMoniker": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Dommain\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "ChatApplication.Dommain\\Entities\\User.cs",
+              "ToolTip": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Dommain\\Entities\\User.cs",
+              "RelativeToolTip": "ChatApplication.Dommain\\Entities\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-29T15:55:10.248Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ChatRepositoryCommands.cs",
+              "DocumentMoniker": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Infra\\Repository\\Chat\\ChatRepositoryCommands.cs",
+              "RelativeDocumentMoniker": "ChatApplication.Infra\\Repository\\Chat\\ChatRepositoryCommands.cs",
+              "ToolTip": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Infra\\Repository\\Chat\\ChatRepositoryCommands.cs",
+              "RelativeToolTip": "ChatApplication.Infra\\Repository\\Chat\\ChatRepositoryCommands.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-29T16:01:34.389Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IChatRepositoryQuery.cs",
+              "DocumentMoniker": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Dommain\\Interfaces\\Chat\\IChatRepositoryQuery.cs",
+              "RelativeDocumentMoniker": "ChatApplication.Dommain\\Interfaces\\Chat\\IChatRepositoryQuery.cs",
+              "ToolTip": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Dommain\\Interfaces\\Chat\\IChatRepositoryQuery.cs",
+              "RelativeToolTip": "ChatApplication.Dommain\\Interfaces\\Chat\\IChatRepositoryQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-29T15:59:54.011Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IChatRepositoryCommands.cs",
+              "DocumentMoniker": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Dommain\\Interfaces\\Chat\\IChatRepositoryCommands.cs",
+              "RelativeDocumentMoniker": "ChatApplication.Dommain\\Interfaces\\Chat\\IChatRepositoryCommands.cs",
+              "ToolTip": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Dommain\\Interfaces\\Chat\\IChatRepositoryCommands.cs",
+              "RelativeToolTip": "ChatApplication.Dommain\\Interfaces\\Chat\\IChatRepositoryCommands.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-29T15:59:51.306Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ChatRepositoryQuery.cs",
+              "DocumentMoniker": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Infra\\Repository\\Chat\\ChatRepositoryQuery.cs",
+              "RelativeDocumentMoniker": "ChatApplication.Infra\\Repository\\Chat\\ChatRepositoryQuery.cs",
+              "ToolTip": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Infra\\Repository\\Chat\\ChatRepositoryQuery.cs",
+              "RelativeToolTip": "ChatApplication.Infra\\Repository\\Chat\\ChatRepositoryQuery.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAowC4AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-29T15:48:04.681Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

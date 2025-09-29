@@ -1,12 +1,1 @@
-{
-  "Version": 1,
-  "Hash": "c/o/fqykd+7NfAF20VRAmMaLpSLZgIqAtRJOa2DNA3k=",
-  "Source": "ChatApplication.webApi",
-  "BasePath": "_content/ChatApplication.webApi",
-  "Mode": "Default",
-  "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": [],
-  "Endpoints": []
-}
+{"Version":1,"Hash":"rgsuW9piRjvh3ZSCPJ7uIyftTsJmItfCRuG8uLJgbJw=","Source":"ChatApplication.webApi","BasePath":"/","Mode":"Root","ManifestType":"Build","ReferencedProjectsConfiguration":[],"DiscoveryPatterns":[],"Assets":[],"Endpoints":[]}

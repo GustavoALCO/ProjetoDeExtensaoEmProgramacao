@@ -19,4 +19,6 @@ public class User
     public bool IsValid { get; set; }
 
     public DateTime CreateData { get; set; }
+
+    public ICollection<ChatUsers> ChatUsers { get; set; }
 }
