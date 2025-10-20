@@ -20,6 +20,7 @@ public class ContextDB : DbContext
     public DbSet<Mensage> Mensage { get; set; }
 
     public DbSet<MensageStatus> MensageStatus { get; set; }
+    public object UserFriends { get; internal set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

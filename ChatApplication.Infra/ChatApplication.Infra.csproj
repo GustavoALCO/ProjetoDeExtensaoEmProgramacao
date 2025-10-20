@@ -8,11 +8,8 @@
 
   <ItemGroup>
     <Compile Remove="Repository\MensageStatus\**" />
-    <Compile Remove="Repository\UserFriend\**" />
     <EmbeddedResource Remove="Repository\MensageStatus\**" />
-    <EmbeddedResource Remove="Repository\UserFriend\**" />
     <None Remove="Repository\MensageStatus\**" />
-    <None Remove="Repository\UserFriend\**" />
   </ItemGroup>
 
   <ItemGroup>
@@ -26,11 +23,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ChatApplication.Dommain\ChatApplication.Dommain.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Repository\Mensage\" />
-    <Folder Include="Repository\User\" />
   </ItemGroup>
 
 </Project>

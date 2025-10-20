@@ -6,13 +6,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Compile Remove="Interfaces\MensageStatus\**" />
-    <Compile Remove="Interfaces\UserFriend\**" />
-    <EmbeddedResource Remove="Interfaces\MensageStatus\**" />
-    <EmbeddedResource Remove="Interfaces\UserFriend\**" />
-    <None Remove="Interfaces\MensageStatus\**" />
-    <None Remove="Interfaces\UserFriend\**" />
-  </ItemGroup>
-
 </Project>

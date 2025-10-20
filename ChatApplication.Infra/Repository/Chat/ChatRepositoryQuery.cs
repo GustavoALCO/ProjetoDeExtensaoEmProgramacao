@@ -18,7 +18,7 @@ public class ChatRepositoryQuery : IChatRepositoryQuery
     {
         var chats = await _db.chatUsers
         .Include(cu => cu.Chat)
-            .ThenInclude(c => c.Mensages) // opcional, se quiser mensagens
+            .ThenInclude(c => c.Mensages).Take(1) //pega a ultima mensagem do chat
         .Include(cu => cu.Chat)
             .ThenInclude(c => c.ChatUsers)
                 .ThenInclude(cu2 => cu2.User) // todos os participantes do chat

@@ -5,5 +5,7 @@ namespace ChatApplication.Dommain.Interfaces.Mensage;
 
 public interface IchatRepositoryQuery
 {
-    public Task<Dommain.Entities.Mensage> GetAllMensages(Guid idChat);
+    public Task<IEnumerable<Dommain.Entities.Chat>> GetAllMensages(Guid idChat);
+
+    public Task<IEnumerable<Dommain.Entities.Mensage>> FindMensage(string mensage);
 }
