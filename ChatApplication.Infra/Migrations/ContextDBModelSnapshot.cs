@@ -32,9 +32,8 @@ namespace ChatApplication.Infra.Migrations
                     b.Property<string>("Description")
                         .HasColumnType("text");
 
-                    b.Property<List<string>>("Image")
-                        .IsRequired()
-                        .HasColumnType("text[]");
+                    b.Property<string>("Image")
+                        .HasColumnType("text");
 
                     b.Property<bool>("IsGroup")
                         .HasColumnType("boolean");
@@ -64,11 +63,9 @@ namespace ChatApplication.Infra.Migrations
 
             modelBuilder.Entity("ChatApplication.Dommain.Entities.Mensage", b =>
                 {
-                    b.Property<int>("MensageId")
+                    b.Property<Guid>("MensageId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("MensageId"));
+                        .HasColumnType("uuid");
 
                     b.Property<Guid?>("ChatId")
                         .HasColumnType("uuid");
@@ -95,25 +92,26 @@ namespace ChatApplication.Infra.Migrations
 
             modelBuilder.Entity("ChatApplication.Dommain.Entities.MensageStatus", b =>
                 {
+                    b.Property<Guid>("MensageID")
+                        .HasColumnType("uuid");
+
                     b.Property<Guid>("UserId")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("uuid");
 
                     b.Property<bool>("IsReceived")
                         .HasColumnType("boolean");
 
-                    b.Property<int?>("MensageId")
-                        .HasColumnType("integer");
+                    b.Property<Guid?>("MensageId")
+                        .HasColumnType("uuid");
 
                     b.Property<DateTime?>("ReaAt")
                         .HasColumnType("timestamp with time zone");
 
-                    b.Property<bool>("ReadMensage")
-                        .HasColumnType("boolean");
-
-                    b.HasKey("UserId");
+                    b.HasKey("MensageID", "UserId");
 
                     b.HasIndex("MensageId");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("MensageStatus");
                 });
@@ -130,9 +128,8 @@ namespace ChatApplication.Infra.Migrations
                     b.Property<string>("Description")
                         .HasColumnType("text");
 
-                    b.Property<List<string>>("Image")
-                        .IsRequired()
-                        .HasColumnType("text[]");
+                    b.Property<string>("Image")
+                        .HasColumnType("text");
 
                     b.Property<bool>("IsValid")
                         .HasColumnType("boolean");
@@ -152,23 +149,21 @@ namespace ChatApplication.Infra.Migrations
 
             modelBuilder.Entity("ChatApplication.Dommain.Entities.UserFriend", b =>
                 {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uuid");
+
+                    b.Property<Guid>("FriendId")
                         .HasColumnType("uuid");
 
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("timestamp with time zone");
 
-                    b.Property<Guid>("FriendId")
-                        .HasColumnType("uuid");
-
                     b.Property<bool>("IsAccepted")
                         .HasColumnType("boolean");
 
-                    b.Property<Guid>("UserId")
-                        .HasColumnType("uuid");
+                    b.HasKey("UserId", "FriendId");
 
-                    b.HasKey("Id");
+                    b.HasIndex("FriendId");
 
                     b.ToTable("UserFriend");
                 });
@@ -202,8 +197,35 @@ namespace ChatApplication.Infra.Migrations
             modelBuilder.Entity("ChatApplication.Dommain.Entities.MensageStatus", b =>
                 {
                     b.HasOne("ChatApplication.Dommain.Entities.Mensage", null)
+                        .WithMany()
+                        .HasForeignKey("MensageID")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("ChatApplication.Dommain.Entities.Mensage", null)
                         .WithMany("MensageStatus")
                         .HasForeignKey("MensageId");
+
+                    b.HasOne("ChatApplication.Dommain.Entities.User", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("ChatApplication.Dommain.Entities.UserFriend", b =>
+                {
+                    b.HasOne("ChatApplication.Dommain.Entities.User", null)
+                        .WithMany()
+                        .HasForeignKey("FriendId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("ChatApplication.Dommain.Entities.User", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("ChatApplication.Dommain.Entities.Chat", b =>

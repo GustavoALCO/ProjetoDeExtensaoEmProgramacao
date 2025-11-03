@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore.Migrations;
-using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 #nullable disable
 
@@ -21,7 +20,7 @@ namespace ChatApplication.Infra.Migrations
                     IsGroup = table.Column<bool>(type: "boolean", nullable: false),
                     Name = table.Column<string>(type: "text", nullable: true),
                     Description = table.Column<string>(type: "text", nullable: true),
-                    Image = table.Column<List<string>>(type: "text[]", nullable: false)
+                    Image = table.Column<string>(type: "text", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -36,7 +35,7 @@ namespace ChatApplication.Infra.Migrations
                     Username = table.Column<string>(type: "text", nullable: false),
                     Password = table.Column<string>(type: "text", nullable: false),
                     Description = table.Column<string>(type: "text", nullable: true),
-                    Image = table.Column<List<string>>(type: "text[]", nullable: false),
+                    Image = table.Column<string>(type: "text", nullable: true),
                     IsValid = table.Column<bool>(type: "boolean", nullable: false),
                     CreateData = table.Column<DateTime>(type: "timestamp with time zone", nullable: false)
                 },
@@ -46,26 +45,10 @@ namespace ChatApplication.Infra.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "UserFriend",
-                columns: table => new
-                {
-                    Id = table.Column<Guid>(type: "uuid", nullable: false),
-                    UserId = table.Column<Guid>(type: "uuid", nullable: false),
-                    FriendId = table.Column<Guid>(type: "uuid", nullable: false),
-                    IsAccepted = table.Column<bool>(type: "boolean", nullable: false),
-                    CreatedAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_UserFriend", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "Mensage",
                 columns: table => new
                 {
-                    MensageId = table.Column<int>(type: "integer", nullable: false)
-                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    MensageId = table.Column<Guid>(type: "uuid", nullable: false),
                     UserId = table.Column<Guid>(type: "uuid", nullable: false),
                     Content = table.Column<string>(type: "text", nullable: true),
                     ImageMensage = table.Column<List<string>>(type: "text[]", nullable: false),
@@ -83,7 +66,7 @@ namespace ChatApplication.Infra.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "ChatUsers",
+                name: "chatUsers",
                 columns: table => new
                 {
                     ChatId = table.Column<Guid>(type: "uuid", nullable: false),
@@ -91,15 +74,15 @@ namespace ChatApplication.Infra.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_ChatUsers", x => new { x.ChatId, x.UserId });
+                    table.PrimaryKey("PK_chatUsers", x => new { x.ChatId, x.UserId });
                     table.ForeignKey(
-                        name: "FK_ChatUsers_Chat_ChatId",
+                        name: "FK_chatUsers_Chat_ChatId",
                         column: x => x.ChatId,
                         principalTable: "Chat",
                         principalColumn: "ChatId",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_ChatUsers_User_UserId",
+                        name: "FK_chatUsers_User_UserId",
                         column: x => x.UserId,
                         principalTable: "User",
                         principalColumn: "UserId",
@@ -107,28 +90,66 @@ namespace ChatApplication.Infra.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "MensageStatus",
+                name: "UserFriend",
                 columns: table => new
                 {
                     UserId = table.Column<Guid>(type: "uuid", nullable: false),
-                    IsReceived = table.Column<bool>(type: "boolean", nullable: false),
-                    ReaAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: true),
-                    ReadMensage = table.Column<bool>(type: "boolean", nullable: false),
-                    MensageId = table.Column<int>(type: "integer", nullable: true)
+                    FriendId = table.Column<Guid>(type: "uuid", nullable: false),
+                    IsAccepted = table.Column<bool>(type: "boolean", nullable: false),
+                    CreatedAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_MensageStatus", x => x.UserId);
+                    table.PrimaryKey("PK_UserFriend", x => new { x.UserId, x.FriendId });
+                    table.ForeignKey(
+                        name: "FK_UserFriend_User_FriendId",
+                        column: x => x.FriendId,
+                        principalTable: "User",
+                        principalColumn: "UserId",
+                        onDelete: ReferentialAction.Restrict);
+                    table.ForeignKey(
+                        name: "FK_UserFriend_User_UserId",
+                        column: x => x.UserId,
+                        principalTable: "User",
+                        principalColumn: "UserId",
+                        onDelete: ReferentialAction.Restrict);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "MensageStatus",
+                columns: table => new
+                {
+                    MensageID = table.Column<Guid>(type: "uuid", nullable: false),
+                    UserId = table.Column<Guid>(type: "uuid", nullable: false),
+                    IsReceived = table.Column<bool>(type: "boolean", nullable: false),
+                    ReaAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: true),
+                    MensageId = table.Column<Guid>(type: "uuid", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_MensageStatus", x => new { x.MensageID, x.UserId });
+                    table.ForeignKey(
+                        name: "FK_MensageStatus_Mensage_MensageID",
+                        column: x => x.MensageID,
+                        principalTable: "Mensage",
+                        principalColumn: "MensageId",
+                        onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
                         name: "FK_MensageStatus_Mensage_MensageId",
                         column: x => x.MensageId,
                         principalTable: "Mensage",
                         principalColumn: "MensageId");
+                    table.ForeignKey(
+                        name: "FK_MensageStatus_User_UserId",
+                        column: x => x.UserId,
+                        principalTable: "User",
+                        principalColumn: "UserId",
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_ChatUsers_UserId",
-                table: "ChatUsers",
+                name: "IX_chatUsers_UserId",
+                table: "chatUsers",
                 column: "UserId");
 
             migrationBuilder.CreateIndex(
@@ -140,13 +161,23 @@ namespace ChatApplication.Infra.Migrations
                 name: "IX_MensageStatus_MensageId",
                 table: "MensageStatus",
                 column: "MensageId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_MensageStatus_UserId",
+                table: "MensageStatus",
+                column: "UserId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_UserFriend_FriendId",
+                table: "UserFriend",
+                column: "FriendId");
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "ChatUsers");
+                name: "chatUsers");
 
             migrationBuilder.DropTable(
                 name: "MensageStatus");
@@ -155,10 +186,10 @@ namespace ChatApplication.Infra.Migrations
                 name: "UserFriend");
 
             migrationBuilder.DropTable(
-                name: "User");
+                name: "Mensage");
 
             migrationBuilder.DropTable(
-                name: "Mensage");
+                name: "User");
 
             migrationBuilder.DropTable(
                 name: "Chat");

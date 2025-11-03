@@ -5,13 +5,15 @@ namespace ChatApplication.Dommain.Entities;
 public class Mensage
 {
     [Key]
-    public int MensageId { get; set; }
+    public Guid MensageId { get; set; }
+    
+    public Guid ChatId { get; set; }
 
     public Guid UserId { get; set; }
 
     public string? Content { get; set; }
 
-    public List<string> ImageMensage { get; set; }
+    public List<string> ImageMensage { get; set; } = new List<string>();
 
     public DateTime SendMensage { get; set; }
 

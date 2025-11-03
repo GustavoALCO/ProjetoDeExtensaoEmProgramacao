@@ -1,11 +1,16 @@
+using ChatApplication.Aplication.Settings;
+using ChatApplication.Dommain.Settings;
 using ChatApplication.IOC;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+// Adicionando Configurações de Injeção de Dependência para o token jwt
+builder.Services.Configure<JWTSettings>(builder.Configuration.GetSection("Jwt"));
+// Adicionando Configuração do banco de dados
+builder.Services.Configure<BDSettings>(builder.Configuration.GetSection("ConnectionStrings"));
 
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+
 builder.Services.AddEndpointsApiExplorer();
 
 builder.Services.AddSwagger();

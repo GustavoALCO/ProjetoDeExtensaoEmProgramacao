@@ -1,5 +1,15 @@
-﻿using ChatApplication.Dommain.Settings;
+﻿using ChatApplication.Dommain.Interfaces.Chat;
+using ChatApplication.Dommain.Interfaces.Mensage;
+using ChatApplication.Dommain.Interfaces.MensageStatus;
+using ChatApplication.Dommain.Interfaces.User;
+using ChatApplication.Dommain.Interfaces.UserFriend;
+using ChatApplication.Dommain.Settings;
 using ChatApplication.Infra.Context;
+using ChatApplication.Infra.Repository.Chat;
+using ChatApplication.Infra.Repository.Mensage;
+using ChatApplication.Infra.Repository.MensageStatus;
+using ChatApplication.Infra.Repository.User;
+using ChatApplication.Infra.Repository.UserFriend;
 using FluentValidation;
 using MediatR;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -42,7 +52,25 @@ public static class DependencyInjection
 
     public static IServiceCollection AddInterfaces(this IServiceCollection services)
     {
-        
+        // Mapeando repositorios dos Usuarios
+        services.AddScoped<IUserRepositoryCommands, UserRepositoryCommands>();
+        services.AddScoped<IUserRepositoryQuery, UserRepositoryQuery>();
+
+        // Mapeando Repositorios dos Chats
+        services.AddScoped<IChatRepositoryCommands, ChatRepositoryCommands>();
+        services.AddScoped<IChatRepositoryQuery, ChatRepositoryQuery>();
+
+        // Mapeando Repositorios das Mensagens
+        services.AddScoped<IMensageRepositoryCommands, MensageRepositoryCommands>();
+        services.AddScoped<IMensageRepositoryQuery, MensageRepositoryQuery>();
+
+        // Mapeando Repositorios das MensageStatus
+        services.AddScoped<IMensageStatusRepositoryCommands, MensageStatusRepositoryCommands>();
+        services.AddScoped<IMensageStatusRepositoryQuery, MensageStatusRepositoryQuery>();
+
+        //Mapeando Repositorios do UserFriends
+        services.AddScoped<IUserFriendRepositoryCommands, UserFriendsRepositoryCommands>();
+        services.AddScoped<IUserFriendRepositoryQuery, UserFriendsRepositoryQuery>();
 
         return services;
     }

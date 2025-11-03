@@ -24,7 +24,6 @@ public class UserFriendsRepositoryCommands : IUserFriendRepositoryCommands
     {
         var userfriend = new Dommain.Entities.UserFriend
         {
-            Id = Guid.NewGuid(),
             UserId = userId,
             FriendId = friendId,
             IsAccepted = request,
