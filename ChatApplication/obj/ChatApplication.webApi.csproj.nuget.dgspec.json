@@ -31,7 +31,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Dommain\\ChatApplication.Dommain.csproj": {
+                "projectPath": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Dommain\\ChatApplication.Dommain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -49,6 +53,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[13.1.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

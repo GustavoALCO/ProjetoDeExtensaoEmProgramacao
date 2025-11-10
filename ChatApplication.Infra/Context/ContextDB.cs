@@ -27,20 +27,13 @@ public class ContextDB : DbContext
     {
         // Definindo a chave primária composta para a entidade MensageStatus
         modelBuilder.Entity<MensageStatus>()
-            .HasKey(ms => new { ms.MensageID, ms.UserId });
+            .HasKey(ms => new { ms.MensageID});
 
         // Definindo o relacionamento entre MensageStatus e Mensage
         modelBuilder.Entity<MensageStatus>()
             .HasOne<Mensage>()
             .WithMany()
             .HasForeignKey(ms => ms.MensageID)
-            .OnDelete(DeleteBehavior.Restrict);
-
-        // Definindo o relacionamento entre MensageStatus e User
-        modelBuilder.Entity<MensageStatus>()
-            .HasOne<User>()
-            .WithMany()
-            .HasForeignKey(ms => ms.UserId)
             .OnDelete(DeleteBehavior.Restrict);
 
         // Definindo a chave primária composta para a entidade UserFriend

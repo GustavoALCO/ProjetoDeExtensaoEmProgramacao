@@ -3,7 +3,6 @@ using ChatApplication.Dommain.Interfaces.User;
 using ChatApplication.Infra.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
-
 namespace ChatApplication.Infra.Repository.User;
 
 public class UserRepositoryQuery : IUserRepositoryQuery
@@ -32,18 +31,38 @@ public class UserRepositoryQuery : IUserRepositoryQuery
         return user;
     }
 
-    public async Task<IEnumerable<Dommain.Entities.User>> GetUsers(string? Username)
+    public async Task<(IEnumerable<Dommain.Entities.User>,int totalItens)> GetUsers(string? Username, int numberPage, int takeUsers)
     {
-        var user = await _db.User.Where(x => x.Username.ToUpper()
-                                                        .Contains(Username.ToUpper()))
-                                                        .ToListAsync();
 
-        if (user == null)
+        var query = _db.User.AsQueryable();
+
+        if (!string.IsNullOrEmpty(Username))
+            query = query.Where(x => x.Username.ToUpper().Contains(Username.ToUpper()));
+                                                        
+
+        int totalitens = await query.CountAsync();
+
+        if (query == null)
         {
             _logger.LogError($"Nao foi possivel encontrar o Usuario com o nome : {Username}");
             throw new Exception($"Nao foi possivel encontrar o Usuario com o ID : {Username}");
         }
 
-        return user;
+        var User = query
+                        .OrderBy(x => x.Username)
+                        .Skip((numberPage - 1) * takeUsers)
+                        .Take(takeUsers)
+                        .ToListAsync(); 
+
+        return (await User, totalitens);
+    }
+
+    public async Task<int>TotalPages (string? Username, int takeUsers)
+    {
+        var totalUsers = await _db.User.Where(x => x.Username.ToUpper()
+                                                        .Contains(Username.ToUpper()))
+                                                        .CountAsync();
+
+        return (int)Math.Ceiling((double)totalUsers / takeUsers);
     }
 }

@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "u3Xx580Byco=",
-  "success": true,
+  "dgSpecHash": "mXWg9ijsOhs=",
+  "success": false,
   "projectFilePath": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication\\ChatApplication.webApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\alves\\.nuget\\packages\\fluentvalidation\\12.0.0\\fluentvalidation.12.0.0.nupkg.sha512",
@@ -51,6 +51,17 @@
       "message": "Versão detectada do pacote fora da restrição de dependência: MediatR.Extensions.Microsoft.DependencyInjection 11.1.0 requer MediatR (>= 11.0.0 && < 12.0.0), mas a versão MediatR 13.0.0 foi resolvida.",
       "projectPath": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication\\ChatApplication.webApi.csproj",
       "warningLevel": 1,
+      "filePath": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication\\ChatApplication.webApi.csproj",
+      "libraryId": "MediatR",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Error",
+      "message": "Aviso como Erro: Downgrade de pacote detectado: MediatR de 13.1.0 para 13.0.0. Referencie o pacote diretamente do projeto para selecionar uma versão diferente. \r\n ChatApplication.webApi -> ChatApplication.IOC -> ChatApplication.Aplication -> MediatR (>= 13.1.0) \r\n ChatApplication.webApi -> ChatApplication.IOC -> MediatR (>= 13.0.0)",
+      "projectPath": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication\\ChatApplication.webApi.csproj",
       "filePath": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication\\ChatApplication.webApi.csproj",
       "libraryId": "MediatR",
       "targetGraphs": [
