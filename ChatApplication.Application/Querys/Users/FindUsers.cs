@@ -1,10 +1,9 @@
 ﻿using ChatApplication.Aplication.DTOs;
-using ChatApplication.Dommain.Entities;
 using MediatR;
 
 namespace ChatApplication.Aplication.Querys.Users;
 
-public class FindUsers : IRequest<FilterDTO<User>>
+public class FindUsers : IRequest<FilterDTO<UsersDTO>>
 {
     public string Username { get; set; }
 

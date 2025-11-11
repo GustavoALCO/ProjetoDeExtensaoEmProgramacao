@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication\\ChatApplication.webApi.csproj": {}
+    "C:\\Users\\alves\\Downloads\\projetoFaculdate\\ProjetoDeExtensaoEmProgramacao\\ChatApplication\\ChatApplication.webApi.csproj": {}
   },
   "projects": {
-    "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\ChatApplication.Aplication.csproj": {
+    "C:\\Users\\alves\\Downloads\\projetoFaculdate\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\ChatApplication.Aplication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\ChatApplication.Aplication.csproj",
+        "projectUniqueName": "C:\\Users\\alves\\Downloads\\projetoFaculdate\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\ChatApplication.Aplication.csproj",
         "projectName": "ChatApplication.Aplication",
-        "projectPath": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\ChatApplication.Aplication.csproj",
+        "projectPath": "C:\\Users\\alves\\Downloads\\projetoFaculdate\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\ChatApplication.Aplication.csproj",
         "packagesPath": "C:\\Users\\alves\\.nuget\\packages\\",
-        "outputPath": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\obj\\",
+        "outputPath": "C:\\Users\\alves\\Downloads\\projetoFaculdate\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Dommain\\ChatApplication.Dommain.csproj": {
-                "projectPath": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Dommain\\ChatApplication.Dommain.csproj"
+              "C:\\Users\\alves\\Downloads\\projetoFaculdate\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Dommain\\ChatApplication.Dommain.csproj": {
+                "projectPath": "C:\\Users\\alves\\Downloads\\projetoFaculdate\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Dommain\\ChatApplication.Dommain.csproj"
               }
             }
           }
@@ -56,7 +56,7 @@
           "dependencies": {
             "MediatR": {
               "target": "Package",
-              "version": "[13.1.0, )"
+              "version": "[13.0.0, )"
             }
           },
           "imports": [
@@ -93,14 +93,14 @@
         }
       }
     },
-    "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Dommain\\ChatApplication.Dommain.csproj": {
+    "C:\\Users\\alves\\Downloads\\projetoFaculdate\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Dommain\\ChatApplication.Dommain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Dommain\\ChatApplication.Dommain.csproj",
+        "projectUniqueName": "C:\\Users\\alves\\Downloads\\projetoFaculdate\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Dommain\\ChatApplication.Dommain.csproj",
         "projectName": "ChatApplication.Dommain",
-        "projectPath": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Dommain\\ChatApplication.Dommain.csproj",
+        "projectPath": "C:\\Users\\alves\\Downloads\\projetoFaculdate\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Dommain\\ChatApplication.Dommain.csproj",
         "packagesPath": "C:\\Users\\alves\\.nuget\\packages\\",
-        "outputPath": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Dommain\\obj\\",
+        "outputPath": "C:\\Users\\alves\\Downloads\\projetoFaculdate\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Dommain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -172,14 +172,14 @@
         }
       }
     },
-    "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Infra\\ChatApplication.Infra.csproj": {
+    "C:\\Users\\alves\\Downloads\\projetoFaculdate\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Infra\\ChatApplication.Infra.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Infra\\ChatApplication.Infra.csproj",
+        "projectUniqueName": "C:\\Users\\alves\\Downloads\\projetoFaculdate\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Infra\\ChatApplication.Infra.csproj",
         "projectName": "ChatApplication.Infra",
-        "projectPath": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Infra\\ChatApplication.Infra.csproj",
+        "projectPath": "C:\\Users\\alves\\Downloads\\projetoFaculdate\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Infra\\ChatApplication.Infra.csproj",
         "packagesPath": "C:\\Users\\alves\\.nuget\\packages\\",
-        "outputPath": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Infra\\obj\\",
+        "outputPath": "C:\\Users\\alves\\Downloads\\projetoFaculdate\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Infra\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -200,8 +200,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Dommain\\ChatApplication.Dommain.csproj": {
-                "projectPath": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Dommain\\ChatApplication.Dommain.csproj"
+              "C:\\Users\\alves\\Downloads\\projetoFaculdate\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Dommain\\ChatApplication.Dommain.csproj": {
+                "projectPath": "C:\\Users\\alves\\Downloads\\projetoFaculdate\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Dommain\\ChatApplication.Dommain.csproj"
               }
             }
           }
@@ -271,14 +271,14 @@
         }
       }
     },
-    "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.IOC\\ChatApplication.IOC.csproj": {
+    "C:\\Users\\alves\\Downloads\\projetoFaculdate\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.IOC\\ChatApplication.IOC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.IOC\\ChatApplication.IOC.csproj",
+        "projectUniqueName": "C:\\Users\\alves\\Downloads\\projetoFaculdate\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.IOC\\ChatApplication.IOC.csproj",
         "projectName": "ChatApplication.IOC",
-        "projectPath": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.IOC\\ChatApplication.IOC.csproj",
+        "projectPath": "C:\\Users\\alves\\Downloads\\projetoFaculdate\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.IOC\\ChatApplication.IOC.csproj",
         "packagesPath": "C:\\Users\\alves\\.nuget\\packages\\",
-        "outputPath": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.IOC\\obj\\",
+        "outputPath": "C:\\Users\\alves\\Downloads\\projetoFaculdate\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.IOC\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -299,14 +299,14 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\ChatApplication.Aplication.csproj": {
-                "projectPath": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\ChatApplication.Aplication.csproj"
+              "C:\\Users\\alves\\Downloads\\projetoFaculdate\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\ChatApplication.Aplication.csproj": {
+                "projectPath": "C:\\Users\\alves\\Downloads\\projetoFaculdate\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\ChatApplication.Aplication.csproj"
               },
-              "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Dommain\\ChatApplication.Dommain.csproj": {
-                "projectPath": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Dommain\\ChatApplication.Dommain.csproj"
+              "C:\\Users\\alves\\Downloads\\projetoFaculdate\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Dommain\\ChatApplication.Dommain.csproj": {
+                "projectPath": "C:\\Users\\alves\\Downloads\\projetoFaculdate\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Dommain\\ChatApplication.Dommain.csproj"
               },
-              "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Infra\\ChatApplication.Infra.csproj": {
-                "projectPath": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Infra\\ChatApplication.Infra.csproj"
+              "C:\\Users\\alves\\Downloads\\projetoFaculdate\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Infra\\ChatApplication.Infra.csproj": {
+                "projectPath": "C:\\Users\\alves\\Downloads\\projetoFaculdate\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Infra\\ChatApplication.Infra.csproj"
               }
             }
           }
@@ -406,14 +406,14 @@
         }
       }
     },
-    "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication\\ChatApplication.webApi.csproj": {
+    "C:\\Users\\alves\\Downloads\\projetoFaculdate\\ProjetoDeExtensaoEmProgramacao\\ChatApplication\\ChatApplication.webApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication\\ChatApplication.webApi.csproj",
+        "projectUniqueName": "C:\\Users\\alves\\Downloads\\projetoFaculdate\\ProjetoDeExtensaoEmProgramacao\\ChatApplication\\ChatApplication.webApi.csproj",
         "projectName": "ChatApplication.webApi",
-        "projectPath": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication\\ChatApplication.webApi.csproj",
+        "projectPath": "C:\\Users\\alves\\Downloads\\projetoFaculdate\\ProjetoDeExtensaoEmProgramacao\\ChatApplication\\ChatApplication.webApi.csproj",
         "packagesPath": "C:\\Users\\alves\\.nuget\\packages\\",
-        "outputPath": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication\\obj\\",
+        "outputPath": "C:\\Users\\alves\\Downloads\\projetoFaculdate\\ProjetoDeExtensaoEmProgramacao\\ChatApplication\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -434,8 +434,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.IOC\\ChatApplication.IOC.csproj": {
-                "projectPath": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.IOC\\ChatApplication.IOC.csproj"
+              "C:\\Users\\alves\\Downloads\\projetoFaculdate\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.IOC\\ChatApplication.IOC.csproj": {
+                "projectPath": "C:\\Users\\alves\\Downloads\\projetoFaculdate\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.IOC\\ChatApplication.IOC.csproj"
               }
             }
           }

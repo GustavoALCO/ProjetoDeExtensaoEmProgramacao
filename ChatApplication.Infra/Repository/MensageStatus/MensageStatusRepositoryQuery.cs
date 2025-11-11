@@ -1,4 +1,6 @@
-﻿using ChatApplication.Dommain.Interfaces.MensageStatus;
+﻿using ChatApplication.Dommain.Entities;
+using ChatApplication.Dommain.Interfaces.MensageStatus;
+using ChatApplication.Dommain.Interfaces.User;
 using ChatApplication.Infra.Context;
 using Microsoft.EntityFrameworkCore;
 
@@ -13,9 +15,9 @@ public class MensageStatusRepositoryQuery : IMensageStatusRepositoryQuery
         _context = context;
     }
 
-    public Task<Dommain.Entities.MensageStatus> GetMensageStatusID(Guid idMensage)
+    public async Task<Dommain.Entities.MensageStatus> GetMensageStatusID(Guid idMensage)
     {
-        var mensageStatus = _context.MensageStatus.FirstOrDefaultAsync(x => x.MensageID == idMensage);
+        var mensageStatus = await _context.MensageStatus.FirstOrDefaultAsync(x => x.MensageID == idMensage); 
 
         if (mensageStatus == null) {
             throw new Exception("Id da mensagem nao encontrada");

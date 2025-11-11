@@ -568,7 +568,7 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "ChatApplication.Dommain": "1.0.0",
-          "MediatR": "13.1.0"
+          "MediatR": "13.0.0"
         },
         "compile": {
           "bin/placeholder/ChatApplication.Aplication.dll": {}
@@ -1676,11 +1676,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.IOC\\ChatApplication.IOC.csproj",
+      "projectUniqueName": "C:\\Users\\alves\\Downloads\\projetoFaculdate\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.IOC\\ChatApplication.IOC.csproj",
       "projectName": "ChatApplication.IOC",
-      "projectPath": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.IOC\\ChatApplication.IOC.csproj",
+      "projectPath": "C:\\Users\\alves\\Downloads\\projetoFaculdate\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.IOC\\ChatApplication.IOC.csproj",
       "packagesPath": "C:\\Users\\alves\\.nuget\\packages\\",
-      "outputPath": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.IOC\\obj\\",
+      "outputPath": "C:\\Users\\alves\\Downloads\\projetoFaculdate\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.IOC\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1701,14 +1701,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\ChatApplication.Aplication.csproj": {
-              "projectPath": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\ChatApplication.Aplication.csproj"
+            "C:\\Users\\alves\\Downloads\\projetoFaculdate\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\ChatApplication.Aplication.csproj": {
+              "projectPath": "C:\\Users\\alves\\Downloads\\projetoFaculdate\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\ChatApplication.Aplication.csproj"
             },
-            "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Dommain\\ChatApplication.Dommain.csproj": {
-              "projectPath": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Dommain\\ChatApplication.Dommain.csproj"
+            "C:\\Users\\alves\\Downloads\\projetoFaculdate\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Dommain\\ChatApplication.Dommain.csproj": {
+              "projectPath": "C:\\Users\\alves\\Downloads\\projetoFaculdate\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Dommain\\ChatApplication.Dommain.csproj"
             },
-            "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Infra\\ChatApplication.Infra.csproj": {
-              "projectPath": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Infra\\ChatApplication.Infra.csproj"
+            "C:\\Users\\alves\\Downloads\\projetoFaculdate\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Infra\\ChatApplication.Infra.csproj": {
+              "projectPath": "C:\\Users\\alves\\Downloads\\projetoFaculdate\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Infra\\ChatApplication.Infra.csproj"
             }
           }
         }
@@ -1814,15 +1814,6 @@
       "level": "Warning",
       "warningLevel": 1,
       "message": "Versão detectada do pacote fora da restrição de dependência: MediatR.Extensions.Microsoft.DependencyInjection 11.1.0 requer MediatR (>= 11.0.0 && < 12.0.0), mas a versão MediatR 13.0.0 foi resolvida.",
-      "libraryId": "MediatR",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    },
-    {
-      "code": "NU1605",
-      "level": "Error",
-      "message": "Aviso como Erro: Downgrade de pacote detectado: MediatR de 13.1.0 para 13.0.0. Referencie o pacote diretamente do projeto para selecionar uma versão diferente. \r\n ChatApplication.IOC -> ChatApplication.Aplication -> MediatR (>= 13.1.0) \r\n ChatApplication.IOC -> MediatR (>= 13.0.0)",
       "libraryId": "MediatR",
       "targetGraphs": [
         "net8.0"

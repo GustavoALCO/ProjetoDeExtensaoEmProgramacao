@@ -5,7 +5,7 @@ using MediatR;
 
 namespace ChatApplication.Aplication.Querys.Users.Handler;
 
-public class FindUsersHandler : IRequestHandler<FindUsers, IEnumerable<User>>
+public class FindUsersHandler : IRequestHandler<FindUsers, FilterDTO<UsersDTO>>
 {
 
     private readonly IUserRepositoryQuery _context;
@@ -15,10 +15,33 @@ public class FindUsersHandler : IRequestHandler<FindUsers, IEnumerable<User>>
         _context = context;
     }
 
-    public Task<IEnumerable<User>> Handle(FindUsers request, CancellationToken cancellationToken)
+    public async Task<FilterDTO<UsersDTO>> Handle(FindUsers request, CancellationToken cancellationToken)
     {
-        var users = _context.GetUsers(request.Username);
+        var (users, totalusers) = await _context.GetUsers(request.Username, request.Page, request.PageSize);
 
-        return users;
+        double totalpages = totalusers / request.PageSize;
+
+
+        var usersDto = users.Select(u => new UsersDTO
+        {
+            UserId = u.UserId,
+            Username = u.Username,
+            Description = u.Description,
+            Image = u.Image
+        }).ToList();
+
+        var filter = new FilterDTO<UsersDTO>()
+        {
+            Page = request.Page,
+            PageSize = request.PageSize,
+            TotalItems = totalusers,
+
+            //Arredonda sempre para cima, dando a opção sempre de criar mais uma pagina.
+            TotalPages = (int)Math.Ceiling(totalpages),
+            Data = usersDto
+            
+        };
+
+        return filter;
     }
 }

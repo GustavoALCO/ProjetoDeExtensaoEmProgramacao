@@ -21,3 +21,15 @@ E:\ProjetoDeExtensaoEmProgramacao\ChatApplication.Dommain\obj\Debug\net8.0\ChatA
 E:\ProjetoDeExtensaoEmProgramacao\ChatApplication.Dommain\obj\Debug\net8.0\refint\ChatApplication.Dommain.dll
 E:\ProjetoDeExtensaoEmProgramacao\ChatApplication.Dommain\obj\Debug\net8.0\ChatApplication.Dommain.pdb
 E:\ProjetoDeExtensaoEmProgramacao\ChatApplication.Dommain\obj\Debug\net8.0\ref\ChatApplication.Dommain.dll
+C:\Users\alves\Downloads\projetoFaculdate\ProjetoDeExtensaoEmProgramacao\ChatApplication.Dommain\bin\Debug\net8.0\ChatApplication.Dommain.deps.json
+C:\Users\alves\Downloads\projetoFaculdate\ProjetoDeExtensaoEmProgramacao\ChatApplication.Dommain\bin\Debug\net8.0\ChatApplication.Dommain.dll
+C:\Users\alves\Downloads\projetoFaculdate\ProjetoDeExtensaoEmProgramacao\ChatApplication.Dommain\bin\Debug\net8.0\ChatApplication.Dommain.pdb
+C:\Users\alves\Downloads\projetoFaculdate\ProjetoDeExtensaoEmProgramacao\ChatApplication.Dommain\obj\Debug\net8.0\ChatApplication.Dommain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alves\Downloads\projetoFaculdate\ProjetoDeExtensaoEmProgramacao\ChatApplication.Dommain\obj\Debug\net8.0\ChatApplication.Dommain.AssemblyInfoInputs.cache
+C:\Users\alves\Downloads\projetoFaculdate\ProjetoDeExtensaoEmProgramacao\ChatApplication.Dommain\obj\Debug\net8.0\ChatApplication.Dommain.AssemblyInfo.cs
+C:\Users\alves\Downloads\projetoFaculdate\ProjetoDeExtensaoEmProgramacao\ChatApplication.Dommain\obj\Debug\net8.0\ChatApplication.Dommain.csproj.CoreCompileInputs.cache
+C:\Users\alves\Downloads\projetoFaculdate\ProjetoDeExtensaoEmProgramacao\ChatApplication.Dommain\obj\Debug\net8.0\ChatApplication.Dommain.sourcelink.json
+C:\Users\alves\Downloads\projetoFaculdate\ProjetoDeExtensaoEmProgramacao\ChatApplication.Dommain\obj\Debug\net8.0\ChatApplication.Dommain.dll
+C:\Users\alves\Downloads\projetoFaculdate\ProjetoDeExtensaoEmProgramacao\ChatApplication.Dommain\obj\Debug\net8.0\refint\ChatApplication.Dommain.dll
+C:\Users\alves\Downloads\projetoFaculdate\ProjetoDeExtensaoEmProgramacao\ChatApplication.Dommain\obj\Debug\net8.0\ChatApplication.Dommain.pdb
+C:\Users\alves\Downloads\projetoFaculdate\ProjetoDeExtensaoEmProgramacao\ChatApplication.Dommain\obj\Debug\net8.0\ref\ChatApplication.Dommain.dll

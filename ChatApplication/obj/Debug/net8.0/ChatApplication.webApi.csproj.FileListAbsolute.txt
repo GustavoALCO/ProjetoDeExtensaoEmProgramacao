@@ -105,3 +105,6 @@ E:\ProjetoDeExtensaoEmProgramacao\ChatApplication\bin\Debug\net8.0\ChatApplicati
 E:\ProjetoDeExtensaoEmProgramacao\ChatApplication\bin\Debug\net8.0\ChatApplication.Aplication.pdb
 E:\ProjetoDeExtensaoEmProgramacao\ChatApplication\bin\Debug\net8.0\ChatApplication.Dommain.pdb
 E:\ProjetoDeExtensaoEmProgramacao\ChatApplication\bin\Debug\net8.0\ChatApplication.Infra.pdb
+C:\Users\alves\Downloads\projetoFaculdate\ProjetoDeExtensaoEmProgramacao\ChatApplication\obj\Debug\net8.0\ChatApplication.webApi.dll
+C:\Users\alves\Downloads\projetoFaculdate\ProjetoDeExtensaoEmProgramacao\ChatApplication\obj\Debug\net8.0\refint\ChatApplication.webApi.dll
+C:\Users\alves\Downloads\projetoFaculdate\ProjetoDeExtensaoEmProgramacao\ChatApplication\obj\Debug\net8.0\ChatApplication.webApi.pdb

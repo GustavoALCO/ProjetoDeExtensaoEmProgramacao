@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sBocHwFWK3E=",
+  "dgSpecHash": "Jk6JCYdegiw=",
   "success": true,
-  "projectFilePath": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Dommain\\ChatApplication.Dommain.csproj",
+  "projectFilePath": "C:\\Users\\alves\\Downloads\\projetoFaculdate\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Dommain\\ChatApplication.Dommain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\alves\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.21\\microsoft.windowsdesktop.app.ref.8.0.21.nupkg.sha512",
     "C:\\Users\\alves\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.21\\microsoft.netcore.app.ref.8.0.21.nupkg.sha512",

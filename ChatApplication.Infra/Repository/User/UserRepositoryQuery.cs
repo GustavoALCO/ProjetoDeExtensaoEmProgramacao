@@ -31,13 +31,12 @@ public class UserRepositoryQuery : IUserRepositoryQuery
         return user;
     }
 
-    public async Task<(IEnumerable<Dommain.Entities.User>,int totalItens)> GetUsers(string? Username, int numberPage, int takeUsers)
+    public async Task<(IEnumerable<Dommain.Entities.User>,int totalItens)> GetUsers(string Username, int numberPage, int takeUsers)
     {
 
         var query = _db.User.AsQueryable();
 
-        if (!string.IsNullOrEmpty(Username))
-            query = query.Where(x => x.Username.ToUpper().Contains(Username.ToUpper()));
+        query = query.Where(x => x.Username.ToUpper().Contains(Username.ToUpper()) || x.IsValid == true);
                                                         
 
         int totalitens = await query.CountAsync();

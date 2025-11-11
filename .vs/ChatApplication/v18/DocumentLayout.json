@@ -1,18 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\ProjetoDeExtensaoEmProgramacao\\",
+  "WorkspaceRootPath": "C:\\Users\\alves\\Downloads\\projetoFaculdate\\ProjetoDeExtensaoEmProgramacao\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B7B58638-D06A-4220-B1C2-98B783D67CF2}|ChatApplication.Application\\ChatApplication.Aplication.csproj|e:\\projetodeextensaoemprogramacao\\chatapplication.application\\querys\\users\\handler\\findusershandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B7B58638-D06A-4220-B1C2-98B783D67CF2}|ChatApplication.Application\\ChatApplication.Aplication.csproj|solutionrelative:chatapplication.application\\querys\\users\\handler\\findusershandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B7B58638-D06A-4220-B1C2-98B783D67CF2}|ChatApplication.Application\\ChatApplication.Aplication.csproj|e:\\projetodeextensaoemprogramacao\\chatapplication.application\\dtos\\filterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B7B58638-D06A-4220-B1C2-98B783D67CF2}|ChatApplication.Application\\ChatApplication.Aplication.csproj|solutionrelative:chatapplication.application\\dtos\\filterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B7B58638-D06A-4220-B1C2-98B783D67CF2}|ChatApplication.Application\\ChatApplication.Aplication.csproj|e:\\projetodeextensaoemprogramacao\\chatapplication.application\\querys\\users\\findusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B7B58638-D06A-4220-B1C2-98B783D67CF2}|ChatApplication.Application\\ChatApplication.Aplication.csproj|solutionrelative:chatapplication.application\\querys\\users\\findusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B29A152C-EF4B-465F-9542-F1E9371CB750}|ChatApplication.Dommain\\ChatApplication.Dommain.csproj|c:\\users\\alves\\downloads\\projetofaculdate\\projetodeextensaoemprogramacao\\chatapplication.dommain\\entities\\userfriend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B29A152C-EF4B-465F-9542-F1E9371CB750}|ChatApplication.Dommain\\ChatApplication.Dommain.csproj|solutionrelative:chatapplication.dommain\\entities\\userfriend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,45 +14,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FilterDTO.cs",
-              "DocumentMoniker": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\DTOs\\FilterDTO.cs",
-              "RelativeDocumentMoniker": "ChatApplication.Application\\DTOs\\FilterDTO.cs",
-              "ToolTip": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\DTOs\\FilterDTO.cs",
-              "RelativeToolTip": "ChatApplication.Application\\DTOs\\FilterDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-08T16:31:52.65Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FindUsers.cs",
-              "DocumentMoniker": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\Querys\\Users\\FindUsers.cs",
-              "RelativeDocumentMoniker": "ChatApplication.Application\\Querys\\Users\\FindUsers.cs",
-              "ToolTip": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\Querys\\Users\\FindUsers.cs",
-              "RelativeToolTip": "ChatApplication.Application\\Querys\\Users\\FindUsers.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-08T16:31:08.505Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "FindUsersHandler.cs",
-              "DocumentMoniker": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\Querys\\Users\\Handler\\FindUsersHandler.cs",
-              "RelativeDocumentMoniker": "ChatApplication.Application\\Querys\\Users\\Handler\\FindUsersHandler.cs",
-              "ToolTip": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\Querys\\Users\\Handler\\FindUsersHandler.cs",
-              "RelativeToolTip": "ChatApplication.Application\\Querys\\Users\\Handler\\FindUsersHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAlAAAAAAAAAA==",
+              "Title": "UserFriend.cs",
+              "DocumentMoniker": "C:\\Users\\alves\\Downloads\\projetoFaculdate\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Dommain\\Entities\\UserFriend.cs",
+              "RelativeDocumentMoniker": "ChatApplication.Dommain\\Entities\\UserFriend.cs",
+              "ToolTip": "C:\\Users\\alves\\Downloads\\projetoFaculdate\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Dommain\\Entities\\UserFriend.cs",
+              "RelativeToolTip": "ChatApplication.Dommain\\Entities\\UserFriend.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-08T13:57:49.124Z",
+              "WhenOpened": "2025-11-11T21:10:46.595Z",
               "EditorCaption": ""
             },
             {

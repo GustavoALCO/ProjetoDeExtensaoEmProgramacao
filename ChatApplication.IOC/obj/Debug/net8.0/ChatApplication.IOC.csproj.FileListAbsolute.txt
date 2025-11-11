@@ -37,3 +37,6 @@ E:\ProjetoDeExtensaoEmProgramacao\ChatApplication.IOC\obj\Debug\net8.0\ChatAppli
 E:\ProjetoDeExtensaoEmProgramacao\ChatApplication.IOC\obj\Debug\net8.0\refint\ChatApplication.IOC.dll
 E:\ProjetoDeExtensaoEmProgramacao\ChatApplication.IOC\obj\Debug\net8.0\ChatApplication.IOC.pdb
 E:\ProjetoDeExtensaoEmProgramacao\ChatApplication.IOC\obj\Debug\net8.0\ref\ChatApplication.IOC.dll
+C:\Users\alves\Downloads\projetoFaculdate\ProjetoDeExtensaoEmProgramacao\ChatApplication.IOC\obj\Debug\net8.0\ChatApplication.IOC.dll
+C:\Users\alves\Downloads\projetoFaculdate\ProjetoDeExtensaoEmProgramacao\ChatApplication.IOC\obj\Debug\net8.0\refint\ChatApplication.IOC.dll
+C:\Users\alves\Downloads\projetoFaculdate\ProjetoDeExtensaoEmProgramacao\ChatApplication.IOC\obj\Debug\net8.0\ChatApplication.IOC.pdb
