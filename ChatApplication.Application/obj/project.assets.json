@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     "net8.0": {
+      "FluentValidation/12.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/FluentValidation.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/FluentValidation.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "MediatR/13.0.0": {
         "type": "package",
         "dependencies": {
@@ -219,6 +232,21 @@
     }
   },
   "libraries": {
+    "FluentValidation/12.0.0": {
+      "sha512": "8NVLxtMUXynRHJIX3Hn1ACovaqZIJASufXIIFkD0EUbcd5PmMsL1xUD5h548gCezJ5BzlITaR9CAMrGe29aWpA==",
+      "type": "package",
+      "path": "fluentvalidation/12.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "fluent-validation-icon.png",
+        "fluentvalidation.12.0.0.nupkg.sha512",
+        "fluentvalidation.nuspec",
+        "lib/net8.0/FluentValidation.dll",
+        "lib/net8.0/FluentValidation.xml"
+      ]
+    },
     "MediatR/13.0.0": {
       "sha512": "gR5vSoIINsXs86we38qdIfG62f6ngxT2sSaePsakJGHJIgLUDA7b41lujGXGWxX0hWyk8suajr2VKcAYSVMtdw==",
       "type": "package",
@@ -600,6 +628,7 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "ChatApplication.Dommain >= 1.0.0",
+      "FluentValidation >= 12.0.0",
       "MediatR >= 13.0.0"
     ]
   },
@@ -610,11 +639,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\alves\\Downloads\\projetoFaculdate\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\ChatApplication.Aplication.csproj",
+      "projectUniqueName": "C:\\Users\\alves\\Downloads\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\ChatApplication.Aplication.csproj",
       "projectName": "ChatApplication.Aplication",
-      "projectPath": "C:\\Users\\alves\\Downloads\\projetoFaculdate\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\ChatApplication.Aplication.csproj",
+      "projectPath": "C:\\Users\\alves\\Downloads\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\ChatApplication.Aplication.csproj",
       "packagesPath": "C:\\Users\\alves\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\alves\\Downloads\\projetoFaculdate\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\obj\\",
+      "outputPath": "C:\\Users\\alves\\Downloads\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -635,8 +664,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\alves\\Downloads\\projetoFaculdate\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Dommain\\ChatApplication.Dommain.csproj": {
-              "projectPath": "C:\\Users\\alves\\Downloads\\projetoFaculdate\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Dommain\\ChatApplication.Dommain.csproj"
+            "C:\\Users\\alves\\Downloads\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Dommain\\ChatApplication.Dommain.csproj": {
+              "projectPath": "C:\\Users\\alves\\Downloads\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Dommain\\ChatApplication.Dommain.csproj"
             }
           }
         }
@@ -657,6 +686,10 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
+          "FluentValidation": {
+            "target": "Package",
+            "version": "[12.0.0, )"
+          },
           "MediatR": {
             "target": "Package",
             "version": "[13.0.0, )"
@@ -673,26 +706,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[8.0.21, 8.0.21]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[8.0.21, 8.0.21]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[8.0.21, 8.0.21]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100-rc.2.25502.107/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

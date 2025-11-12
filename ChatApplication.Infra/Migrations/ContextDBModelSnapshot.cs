@@ -39,6 +39,7 @@ namespace ChatApplication.Infra.Migrations
                         .HasColumnType("boolean");
 
                     b.Property<string>("Name")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.HasKey("ChatId");
@@ -67,7 +68,7 @@ namespace ChatApplication.Infra.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uuid");
 
-                    b.Property<Guid?>("ChatId")
+                    b.Property<Guid>("ChatId")
                         .HasColumnType("uuid");
 
                     b.Property<string>("Content")
@@ -95,23 +96,21 @@ namespace ChatApplication.Infra.Migrations
                     b.Property<Guid>("MensageID")
                         .HasColumnType("uuid");
 
-                    b.Property<Guid>("UserId")
-                        .HasColumnType("uuid");
-
                     b.Property<bool>("IsReceived")
                         .HasColumnType("boolean");
 
-                    b.Property<Guid?>("MensageId")
+                    b.Property<Guid>("MensageId")
                         .HasColumnType("uuid");
 
                     b.Property<DateTime?>("ReaAt")
                         .HasColumnType("timestamp with time zone");
 
-                    b.HasKey("MensageID", "UserId");
+                    b.Property<Guid>("RecibeUserId")
+                        .HasColumnType("uuid");
+
+                    b.HasKey("MensageID");
 
                     b.HasIndex("MensageId");
-
-                    b.HasIndex("UserId");
 
                     b.ToTable("MensageStatus");
                 });
@@ -191,7 +190,9 @@ namespace ChatApplication.Infra.Migrations
                 {
                     b.HasOne("ChatApplication.Dommain.Entities.Chat", null)
                         .WithMany("Mensages")
-                        .HasForeignKey("ChatId");
+                        .HasForeignKey("ChatId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("ChatApplication.Dommain.Entities.MensageStatus", b =>
@@ -204,12 +205,8 @@ namespace ChatApplication.Infra.Migrations
 
                     b.HasOne("ChatApplication.Dommain.Entities.Mensage", null)
                         .WithMany("MensageStatus")
-                        .HasForeignKey("MensageId");
-
-                    b.HasOne("ChatApplication.Dommain.Entities.User", null)
-                        .WithMany()
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Restrict)
+                        .HasForeignKey("MensageId")
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 

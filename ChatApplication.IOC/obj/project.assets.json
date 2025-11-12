@@ -568,6 +568,7 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "ChatApplication.Dommain": "1.0.0",
+          "FluentValidation": "12.0.0",
           "MediatR": "13.0.0"
         },
         "compile": {
@@ -1676,11 +1677,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\alves\\Downloads\\projetoFaculdate\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.IOC\\ChatApplication.IOC.csproj",
+      "projectUniqueName": "C:\\Users\\alves\\Downloads\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.IOC\\ChatApplication.IOC.csproj",
       "projectName": "ChatApplication.IOC",
-      "projectPath": "C:\\Users\\alves\\Downloads\\projetoFaculdate\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.IOC\\ChatApplication.IOC.csproj",
+      "projectPath": "C:\\Users\\alves\\Downloads\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.IOC\\ChatApplication.IOC.csproj",
       "packagesPath": "C:\\Users\\alves\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\alves\\Downloads\\projetoFaculdate\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.IOC\\obj\\",
+      "outputPath": "C:\\Users\\alves\\Downloads\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.IOC\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1701,14 +1702,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\alves\\Downloads\\projetoFaculdate\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\ChatApplication.Aplication.csproj": {
-              "projectPath": "C:\\Users\\alves\\Downloads\\projetoFaculdate\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\ChatApplication.Aplication.csproj"
+            "C:\\Users\\alves\\Downloads\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\ChatApplication.Aplication.csproj": {
+              "projectPath": "C:\\Users\\alves\\Downloads\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\ChatApplication.Aplication.csproj"
             },
-            "C:\\Users\\alves\\Downloads\\projetoFaculdate\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Dommain\\ChatApplication.Dommain.csproj": {
-              "projectPath": "C:\\Users\\alves\\Downloads\\projetoFaculdate\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Dommain\\ChatApplication.Dommain.csproj"
+            "C:\\Users\\alves\\Downloads\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Dommain\\ChatApplication.Dommain.csproj": {
+              "projectPath": "C:\\Users\\alves\\Downloads\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Dommain\\ChatApplication.Dommain.csproj"
             },
-            "C:\\Users\\alves\\Downloads\\projetoFaculdate\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Infra\\ChatApplication.Infra.csproj": {
-              "projectPath": "C:\\Users\\alves\\Downloads\\projetoFaculdate\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Infra\\ChatApplication.Infra.csproj"
+            "C:\\Users\\alves\\Downloads\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Infra\\ChatApplication.Infra.csproj": {
+              "projectPath": "C:\\Users\\alves\\Downloads\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Infra\\ChatApplication.Infra.csproj"
             }
           }
         }
@@ -1785,26 +1786,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[8.0.21, 8.0.21]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[8.0.21, 8.0.21]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[8.0.21, 8.0.21]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100-rc.2.25502.107/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
   },
