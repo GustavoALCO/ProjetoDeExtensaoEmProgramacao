@@ -1,5 +1,5 @@
-﻿using ChatApplication.Aplication.Features.Commands.Users;
-using ChatApplication.Aplication.Interfaces;
+﻿using ChatApplication.Aplication.Interfaces;
+using ChatApplication.Application.Features.Commands.Users;
 using ChatApplication.Dommain.Interfaces.User;
 using FluentValidation;
 

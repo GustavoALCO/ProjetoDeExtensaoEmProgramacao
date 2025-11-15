@@ -53,3 +53,4 @@ C:\Users\alves\Downloads\ProjetoDeExtensaoEmProgramacao\ChatApplication.Applicat
 C:\Users\alves\Downloads\ProjetoDeExtensaoEmProgramacao\ChatApplication.Application\obj\Debug\net8.0\refint\ChatApplication.Aplication.dll
 C:\Users\alves\Downloads\ProjetoDeExtensaoEmProgramacao\ChatApplication.Application\obj\Debug\net8.0\ChatApplication.Aplication.pdb
 C:\Users\alves\Downloads\ProjetoDeExtensaoEmProgramacao\ChatApplication.Application\obj\Debug\net8.0\ref\ChatApplication.Aplication.dll
+E:\ProjetoDeExtensaoEmProgramacao\ChatApplication.Application\obj\Debug\net8.0\ChatApplication.Aplication.csproj.AssemblyReference.cache

@@ -1,6 +1,6 @@
 ﻿using MediatR;
 
-namespace ChatApplication.Aplication.Features.Commands.Users;
+namespace ChatApplication.Application.Features.Commands.Users;
 
 public class CriarUsuario : IRequest
 {

@@ -1,22 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\alves\\Downloads\\ProjetoDeExtensaoEmProgramacao\\",
+  "WorkspaceRootPath": "E:\\ProjetoDeExtensaoEmProgramacao\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B7B58638-D06A-4220-B1C2-98B783D67CF2}|ChatApplication.Application\\ChatApplication.Aplication.csproj|c:\\users\\alves\\downloads\\projetodeextensaoemprogramacao\\chatapplication.application\\features\\commands\\users\\handler\\alterarimagemhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B7B58638-D06A-4220-B1C2-98B783D67CF2}|ChatApplication.Application\\ChatApplication.Aplication.csproj|solutionrelative:chatapplication.application\\features\\commands\\users\\handler\\alterarimagemhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B7B58638-D06A-4220-B1C2-98B783D67CF2}|ChatApplication.Application\\ChatApplication.Application.csproj|e:\\projetodeextensaoemprogramacao\\chatapplication.application\\features\\commands\\users\\handler\\loginhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7B58638-D06A-4220-B1C2-98B783D67CF2}|ChatApplication.Application\\ChatApplication.Application.csproj|solutionrelative:chatapplication.application\\features\\commands\\users\\handler\\loginhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B7B58638-D06A-4220-B1C2-98B783D67CF2}|ChatApplication.Application\\ChatApplication.Aplication.csproj|c:\\users\\alves\\downloads\\projetodeextensaoemprogramacao\\chatapplication.application\\features\\commands\\users\\alterarimagem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B7B58638-D06A-4220-B1C2-98B783D67CF2}|ChatApplication.Application\\ChatApplication.Aplication.csproj|solutionrelative:chatapplication.application\\features\\commands\\users\\alterarimagem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B7B58638-D06A-4220-B1C2-98B783D67CF2}|ChatApplication.Application\\ChatApplication.Application.csproj|e:\\projetodeextensaoemprogramacao\\chatapplication.application\\features\\commands\\users\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7B58638-D06A-4220-B1C2-98B783D67CF2}|ChatApplication.Application\\ChatApplication.Application.csproj|solutionrelative:chatapplication.application\\features\\commands\\users\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B7B58638-D06A-4220-B1C2-98B783D67CF2}|ChatApplication.Application\\ChatApplication.Aplication.csproj|c:\\users\\alves\\downloads\\projetodeextensaoemprogramacao\\chatapplication.application\\features\\commands\\users\\criarusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B7B58638-D06A-4220-B1C2-98B783D67CF2}|ChatApplication.Application\\ChatApplication.Aplication.csproj|solutionrelative:chatapplication.application\\features\\commands\\users\\criarusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B7B58638-D06A-4220-B1C2-98B783D67CF2}|ChatApplication.Application\\ChatApplication.Application.csproj|e:\\projetodeextensaoemprogramacao\\chatapplication.application\\features\\commands\\users\\handler\\criarusuariohandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7B58638-D06A-4220-B1C2-98B783D67CF2}|ChatApplication.Application\\ChatApplication.Application.csproj|solutionrelative:chatapplication.application\\features\\commands\\users\\handler\\criarusuariohandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B7B58638-D06A-4220-B1C2-98B783D67CF2}|ChatApplication.Application\\ChatApplication.Aplication.csproj|c:\\users\\alves\\downloads\\projetodeextensaoemprogramacao\\chatapplication.application\\features\\commands\\users\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B7B58638-D06A-4220-B1C2-98B783D67CF2}|ChatApplication.Application\\ChatApplication.Aplication.csproj|solutionrelative:chatapplication.application\\features\\commands\\users\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B7B58638-D06A-4220-B1C2-98B783D67CF2}|ChatApplication.Application\\ChatApplication.Application.csproj|e:\\projetodeextensaoemprogramacao\\chatapplication.application\\service\\uservalidations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7B58638-D06A-4220-B1C2-98B783D67CF2}|ChatApplication.Application\\ChatApplication.Application.csproj|solutionrelative:chatapplication.application\\service\\uservalidations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,62 +26,62 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Login.cs",
-              "DocumentMoniker": "C:\\Users\\alves\\Downloads\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\Features\\Commands\\Users\\Login.cs",
-              "RelativeDocumentMoniker": "ChatApplication.Application\\Features\\Commands\\Users\\Login.cs",
-              "ToolTip": "C:\\Users\\alves\\Downloads\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\Features\\Commands\\Users\\Login.cs",
-              "RelativeToolTip": "ChatApplication.Application\\Features\\Commands\\Users\\Login.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-12T21:37:56.135Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CriarUsuario.cs",
-              "DocumentMoniker": "C:\\Users\\alves\\Downloads\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\Features\\Commands\\Users\\CriarUsuario.cs",
-              "RelativeDocumentMoniker": "ChatApplication.Application\\Features\\Commands\\Users\\CriarUsuario.cs",
-              "ToolTip": "C:\\Users\\alves\\Downloads\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\Features\\Commands\\Users\\CriarUsuario.cs",
-              "RelativeToolTip": "ChatApplication.Application\\Features\\Commands\\Users\\CriarUsuario.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-12T21:37:51.2Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "AlterarImagem.cs",
-              "DocumentMoniker": "C:\\Users\\alves\\Downloads\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\Features\\Commands\\Users\\AlterarImagem.cs",
-              "RelativeDocumentMoniker": "ChatApplication.Application\\Features\\Commands\\Users\\AlterarImagem.cs",
-              "ToolTip": "C:\\Users\\alves\\Downloads\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\Features\\Commands\\Users\\AlterarImagem.cs",
-              "RelativeToolTip": "ChatApplication.Application\\Features\\Commands\\Users\\AlterarImagem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAlAAAAAAAAAA==",
+              "Title": "Login.cs",
+              "DocumentMoniker": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\Features\\Commands\\Users\\Login.cs",
+              "RelativeDocumentMoniker": "ChatApplication.Application\\Features\\Commands\\Users\\Login.cs",
+              "ToolTip": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\Features\\Commands\\Users\\Login.cs",
+              "RelativeToolTip": "ChatApplication.Application\\Features\\Commands\\Users\\Login.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-12T21:37:31.206Z",
+              "WhenOpened": "2025-11-15T16:09:54.369Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AlterarImagemHandler.cs",
-              "DocumentMoniker": "C:\\Users\\alves\\Downloads\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\Features\\Commands\\Users\\Handler\\AlterarImagemHandler.cs",
-              "RelativeDocumentMoniker": "ChatApplication.Application\\Features\\Commands\\Users\\Handler\\AlterarImagemHandler.cs",
-              "ToolTip": "C:\\Users\\alves\\Downloads\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\Features\\Commands\\Users\\Handler\\AlterarImagemHandler.cs",
-              "RelativeToolTip": "ChatApplication.Application\\Features\\Commands\\Users\\Handler\\AlterarImagemHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Title": "LoginHandler.cs",
+              "DocumentMoniker": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\Features\\Commands\\Users\\Handler\\LoginHandler.cs",
+              "RelativeDocumentMoniker": "ChatApplication.Application\\Features\\Commands\\Users\\Handler\\LoginHandler.cs",
+              "ToolTip": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\Features\\Commands\\Users\\Handler\\LoginHandler.cs",
+              "RelativeToolTip": "ChatApplication.Application\\Features\\Commands\\Users\\Handler\\LoginHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-12T21:37:12.657Z",
+              "WhenOpened": "2025-11-15T16:06:30.513Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserValidations.cs",
+              "DocumentMoniker": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\Service\\UserValidations.cs",
+              "RelativeDocumentMoniker": "ChatApplication.Application\\Service\\UserValidations.cs",
+              "ToolTip": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\Service\\UserValidations.cs",
+              "RelativeToolTip": "ChatApplication.Application\\Service\\UserValidations.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T16:01:39.799Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CriarUsuarioHandler.cs",
+              "DocumentMoniker": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\Features\\Commands\\Users\\Handler\\CriarUsuarioHandler.cs",
+              "RelativeDocumentMoniker": "ChatApplication.Application\\Features\\Commands\\Users\\Handler\\CriarUsuarioHandler.cs",
+              "ToolTip": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\Features\\Commands\\Users\\Handler\\CriarUsuarioHandler.cs",
+              "RelativeToolTip": "ChatApplication.Application\\Features\\Commands\\Users\\Handler\\CriarUsuarioHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T15:57:25.368Z",
               "EditorCaption": ""
             }
           ]
