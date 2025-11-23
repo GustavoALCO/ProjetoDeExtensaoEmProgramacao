@@ -31,6 +31,19 @@ public class UserRepositoryQuery : IUserRepositoryQuery
         return user;
     }
 
+    public async Task<Dommain.Entities.User> GetUserByUsername(string username)
+    {
+        var user  =  await _db.User.FirstOrDefaultAsync(x => x.Username.ToUpper() == username.ToUpper());
+
+        if (user == null)
+        {
+            _logger.LogError($"Nao foi possivel encontrar o Usuario com o nome : {username}");
+            throw new Exception($"Nao foi possivel encontrar o Usuario com o nome : {username}");
+        }
+
+        return user;
+    }
+
     public async Task<(IEnumerable<Dommain.Entities.User>,int totalItens)> GetUsers(string Username, int numberPage, int takeUsers)
     {
 

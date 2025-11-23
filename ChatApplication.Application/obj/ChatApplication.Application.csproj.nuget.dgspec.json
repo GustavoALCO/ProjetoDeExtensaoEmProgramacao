@@ -65,6 +65,18 @@
             "MediatR": {
               "target": "Package",
               "version": "[13.0.0, )"
+            },
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.3.1, )"
+            },
+            "Microsoft.AspNetCore.SignalR.Core": {
+              "target": "Package",
+              "version": "[1.2.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[8.15.0, )"
             }
           },
           "imports": [
@@ -81,15 +93,15 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.21, 8.0.21]"
+              "version": "[8.0.22, 8.0.22]"
             },
             {
               "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.21, 8.0.21]"
+              "version": "[8.0.22, 8.0.22]"
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[8.0.21, 8.0.21]"
+              "version": "[8.0.22, 8.0.22]"
             }
           ],
           "frameworkReferences": {
@@ -97,7 +109,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100-rc.2.25502.107/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
@@ -160,15 +172,15 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.21, 8.0.21]"
+              "version": "[8.0.22, 8.0.22]"
             },
             {
               "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.21, 8.0.21]"
+              "version": "[8.0.22, 8.0.22]"
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[8.0.21, 8.0.21]"
+              "version": "[8.0.22, 8.0.22]"
             }
           ],
           "frameworkReferences": {
@@ -176,7 +188,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100-rc.2.25502.107/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

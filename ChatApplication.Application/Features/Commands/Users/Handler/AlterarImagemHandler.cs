@@ -13,9 +13,11 @@ public class AlterarImagemHandler : IRequestHandler<AlterarImagem>
 
     private readonly ISavedImages _Image;
 
-    public AlterarImagemHandler(IUserRepositoryCommands commands)
+    public AlterarImagemHandler(IUserRepositoryCommands commands, IUserRepositoryQuery query, ISavedImages image)
     {
         _commands = commands;
+        _query = query;
+        _Image = image;
     }
 
     public async Task Handle(AlterarImagem request, CancellationToken cancellationToken)

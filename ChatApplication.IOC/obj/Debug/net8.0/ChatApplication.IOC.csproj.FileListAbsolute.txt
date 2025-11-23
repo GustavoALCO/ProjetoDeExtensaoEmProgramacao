@@ -20,10 +20,8 @@ D:\ChatApplication\ChatApplication.IOC\obj\Debug\net8.0\ref\ChatApplication.IOC.
 E:\ProjetoDeExtensaoEmProgramacao\ChatApplication.IOC\bin\Debug\net8.0\ChatApplication.IOC.deps.json
 E:\ProjetoDeExtensaoEmProgramacao\ChatApplication.IOC\bin\Debug\net8.0\ChatApplication.IOC.dll
 E:\ProjetoDeExtensaoEmProgramacao\ChatApplication.IOC\bin\Debug\net8.0\ChatApplication.IOC.pdb
-E:\ProjetoDeExtensaoEmProgramacao\ChatApplication.IOC\bin\Debug\net8.0\ChatApplication.Aplication.dll
 E:\ProjetoDeExtensaoEmProgramacao\ChatApplication.IOC\bin\Debug\net8.0\ChatApplication.Dommain.dll
 E:\ProjetoDeExtensaoEmProgramacao\ChatApplication.IOC\bin\Debug\net8.0\ChatApplication.Infra.dll
-E:\ProjetoDeExtensaoEmProgramacao\ChatApplication.IOC\bin\Debug\net8.0\ChatApplication.Aplication.pdb
 E:\ProjetoDeExtensaoEmProgramacao\ChatApplication.IOC\bin\Debug\net8.0\ChatApplication.Dommain.pdb
 E:\ProjetoDeExtensaoEmProgramacao\ChatApplication.IOC\bin\Debug\net8.0\ChatApplication.Infra.pdb
 E:\ProjetoDeExtensaoEmProgramacao\ChatApplication.IOC\obj\Debug\net8.0\ChatApplication.IOC.csproj.AssemblyReference.cache
@@ -60,3 +58,5 @@ C:\Users\alves\Downloads\ProjetoDeExtensaoEmProgramacao\ChatApplication.IOC\obj\
 C:\Users\alves\Downloads\ProjetoDeExtensaoEmProgramacao\ChatApplication.IOC\obj\Debug\net8.0\refint\ChatApplication.IOC.dll
 C:\Users\alves\Downloads\ProjetoDeExtensaoEmProgramacao\ChatApplication.IOC\obj\Debug\net8.0\ChatApplication.IOC.pdb
 C:\Users\alves\Downloads\ProjetoDeExtensaoEmProgramacao\ChatApplication.IOC\obj\Debug\net8.0\ref\ChatApplication.IOC.dll
+E:\ProjetoDeExtensaoEmProgramacao\ChatApplication.IOC\bin\Debug\net8.0\ChatApplication.Application.dll
+E:\ProjetoDeExtensaoEmProgramacao\ChatApplication.IOC\bin\Debug\net8.0\ChatApplication.Application.pdb

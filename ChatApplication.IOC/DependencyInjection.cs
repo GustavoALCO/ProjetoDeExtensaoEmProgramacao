@@ -16,7 +16,6 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System.Reflection;
@@ -87,6 +86,13 @@ public static class DependencyInjection
 
         return services;
     }
+
+    //public static IServiceCollection SignalRConnection(this IServiceCollection services)
+    //{
+    //    services.AddSignalR();
+
+    //    return services;
+    //}
 
     public static IServiceCollection AddFluentValidate(this IServiceCollection services)
     {

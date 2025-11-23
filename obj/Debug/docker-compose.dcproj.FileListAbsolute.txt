@@ -21,7 +21,6 @@ E:\ProjetoDeExtensaoEmProgramacao\bin\Debug\Npgsql.EntityFrameworkCore.PostgreSQ
 E:\ProjetoDeExtensaoEmProgramacao\bin\Debug\Microsoft.EntityFrameworkCore.dll
 E:\ProjetoDeExtensaoEmProgramacao\bin\Debug\MediatR.dll
 E:\ProjetoDeExtensaoEmProgramacao\bin\Debug\Swashbuckle.AspNetCore.SwaggerGen.dll
-E:\ProjetoDeExtensaoEmProgramacao\bin\Debug\ChatApplication.Aplication.dll
 E:\ProjetoDeExtensaoEmProgramacao\bin\Debug\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 E:\ProjetoDeExtensaoEmProgramacao\bin\Debug\ChatApplication.Infra.dll
 E:\ProjetoDeExtensaoEmProgramacao\bin\Debug\FluentValidation.DependencyInjectionExtensions.dll
@@ -42,7 +41,6 @@ E:\ProjetoDeExtensaoEmProgramacao\bin\Debug\ChatApplication.Dommain.dll
 E:\ProjetoDeExtensaoEmProgramacao\bin\Debug\Microsoft.IdentityModel.Logging.dll
 E:\ProjetoDeExtensaoEmProgramacao\bin\Debug\Microsoft.IdentityModel.Abstractions.dll
 E:\ProjetoDeExtensaoEmProgramacao\bin\Debug\ChatApplication.IOC.pdb
-E:\ProjetoDeExtensaoEmProgramacao\bin\Debug\ChatApplication.Aplication.pdb
 E:\ProjetoDeExtensaoEmProgramacao\bin\Debug\ChatApplication.Infra.pdb
 E:\ProjetoDeExtensaoEmProgramacao\bin\Debug\ChatApplication.Dommain.pdb
 C:\Users\alves\Downloads\ProjetoDeExtensaoEmProgramacao\bin\Debug\appsettings.Development.json
@@ -92,3 +90,13 @@ C:\Users\alves\Downloads\ProjetoDeExtensaoEmProgramacao\bin\Debug\ChatApplicatio
 C:\Users\alves\Downloads\ProjetoDeExtensaoEmProgramacao\obj\Debug\docker-compose.dcproj.AssemblyReference.cache
 C:\Users\alves\Downloads\ProjetoDeExtensaoEmProgramacao\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
 C:\Users\alves\Downloads\ProjetoDeExtensaoEmProgramacao\obj\Debug\docker-c.35A3FFBA.Up2Date
+E:\ProjetoDeExtensaoEmProgramacao\bin\Debug\ChatApplication.Application.dll
+E:\ProjetoDeExtensaoEmProgramacao\bin\Debug\Microsoft.Extensions.Hosting.Abstractions.dll
+E:\ProjetoDeExtensaoEmProgramacao\bin\Debug\Azure.Core.dll
+E:\ProjetoDeExtensaoEmProgramacao\bin\Debug\Azure.Storage.Blobs.dll
+E:\ProjetoDeExtensaoEmProgramacao\bin\Debug\Microsoft.Extensions.Diagnostics.Abstractions.dll
+E:\ProjetoDeExtensaoEmProgramacao\bin\Debug\System.ClientModel.dll
+E:\ProjetoDeExtensaoEmProgramacao\bin\Debug\System.Memory.Data.dll
+E:\ProjetoDeExtensaoEmProgramacao\bin\Debug\Azure.Storage.Common.dll
+E:\ProjetoDeExtensaoEmProgramacao\bin\Debug\System.IO.Hashing.dll
+E:\ProjetoDeExtensaoEmProgramacao\bin\Debug\ChatApplication.Application.pdb

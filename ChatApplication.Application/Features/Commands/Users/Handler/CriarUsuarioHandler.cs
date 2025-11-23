@@ -1,4 +1,5 @@
-﻿using ChatApplication.Dommain.Entities;
+﻿using ChatApplication.Application.Interfaces;
+using ChatApplication.Dommain.Entities;
 using ChatApplication.Dommain.Interfaces.User;
 using MediatR;
 using Microsoft.Extensions.Logging;
@@ -11,10 +12,16 @@ public class CriarUsuarioHandler : IRequestHandler<CriarUsuario>
 
     private readonly IUserRepositoryCommands _commands;
 
-    public CriarUsuarioHandler(IUserRepositoryCommands commands, ILogger<CriarUsuarioHandler> logger)
+    private readonly IHashPassword _hashPassword;
+
+    private readonly ISavedImages _savedImages;
+
+    public CriarUsuarioHandler(IUserRepositoryCommands commands, ILogger<CriarUsuarioHandler> logger, IHashPassword hashPassword, ISavedImages savedImages)
     {
         _commands = commands;
         _logger = logger;
+        _hashPassword = hashPassword;
+        _savedImages = savedImages;
     }
 
     public async Task Handle(CriarUsuario request, CancellationToken cancellationToken)
@@ -23,14 +30,16 @@ public class CriarUsuarioHandler : IRequestHandler<CriarUsuario>
         {
             UserId = Guid.NewGuid(),
             Username = request.Username,
-            Password = request.Password,
+            Password = "",
             Description = request.Description,
-            Image = request.Image,
+            Image = await _savedImages.UploadBase64ImagesAsync(request.Image,  0),
             IsValid = true,
             CreateData = DateTime.UtcNow.AddHours(-3)
         };
 
-        _logger.LogInformation("Usuário criado: {@User}", user);
+        user.Password = _hashPassword.Hash(user, request.Password);
+
+        _logger.LogInformation("Usuário criado com sucesso");
 
         await _commands.CreateUser(user);
     }

@@ -2,7 +2,7 @@
 
 namespace ChatApplication.Aplication.Features.Commands.Users;
 
-public class Login : IRequest<bool>
+public class Login : IRequest<string>
 {
     public string UserName { get; set; }
 
