@@ -1,4 +1,5 @@
-﻿using ChatApplication.Dommain.Interfaces.Chat;
+﻿using ChatApplication.Aplication.Settings;
+using ChatApplication.Dommain.Interfaces.Chat;
 using ChatApplication.Dommain.Interfaces.Mensage;
 using ChatApplication.Dommain.Interfaces.MensageStatus;
 using ChatApplication.Dommain.Interfaces.User;
@@ -27,16 +28,27 @@ public static class DependencyInjection
 {
     public static IServiceCollection AddInfra(this IServiceCollection services, IConfiguration configuration)
     {
+        // Lê a seção BDSettings do appsettings.json
+        var bdSettings = new BDSettings();
+        configuration.GetSection("BDSettings").Bind(bdSettings);
+
+        string connectionString =
+            $"Host={bdSettings.Host};" +
+            $"Port={bdSettings.Port};" +
+            $"Database={bdSettings.Database};" +
+            $"Username={bdSettings.Username};" +
+            $"Password={bdSettings.Password};";
+
         services.AddDbContext<ContextDB>(options =>
         {
-            options.UseNpgsql(
-
-                "Host=NOME_BANCO;Port=PORTA;Database=NOMEBANCO;Username=USUARIOBANCO;Password=SENHA",
-                npgsqlOptions =>
-                {
-                    npgsqlOptions.MigrationsAssembly(typeof(ContextDB).Assembly.FullName);
-                });
+            options.UseNpgsql(connectionString, npgsqlOptions =>
+            {
+                npgsqlOptions.MigrationsAssembly(typeof(ContextDB).Assembly.FullName);
+            });
         });
+
+        // Registra o BDSettings no DI (caso precise em outras classes)
+        services.Configure<BDSettings>(configuration.GetSection("BDSettings"));
 
         return services;
     }
@@ -86,13 +98,6 @@ public static class DependencyInjection
 
         return services;
     }
-
-    //public static IServiceCollection SignalRConnection(this IServiceCollection services)
-    //{
-    //    services.AddSignalR();
-
-    //    return services;
-    //}
 
     public static IServiceCollection AddFluentValidate(this IServiceCollection services)
     {

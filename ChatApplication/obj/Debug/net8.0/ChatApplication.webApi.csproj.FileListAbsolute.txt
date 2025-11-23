@@ -184,13 +184,10 @@ E:\ProjetoDeExtensaoEmProgramacao\ChatApplication\bin\Debug\net8.0\Microsoft.Bcl
 E:\ProjetoDeExtensaoEmProgramacao\ChatApplication\bin\Debug\net8.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
 E:\ProjetoDeExtensaoEmProgramacao\ChatApplication\bin\Debug\net8.0\Microsoft.Extensions.Hosting.Abstractions.dll
 E:\ProjetoDeExtensaoEmProgramacao\ChatApplication\bin\Debug\net8.0\Microsoft.Extensions.ObjectPool.dll
-E:\ProjetoDeExtensaoEmProgramacao\ChatApplication\bin\Debug\net8.0\Microsoft.Extensions.WebEncoders.dll
 E:\ProjetoDeExtensaoEmProgramacao\ChatApplication\bin\Debug\net8.0\Newtonsoft.Json.dll
 E:\ProjetoDeExtensaoEmProgramacao\ChatApplication\bin\Debug\net8.0\System.ClientModel.dll
 E:\ProjetoDeExtensaoEmProgramacao\ChatApplication\bin\Debug\net8.0\System.IO.Hashing.dll
 E:\ProjetoDeExtensaoEmProgramacao\ChatApplication\bin\Debug\net8.0\System.Memory.Data.dll
-E:\ProjetoDeExtensaoEmProgramacao\ChatApplication\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
-E:\ProjetoDeExtensaoEmProgramacao\ChatApplication\bin\Debug\net8.0\System.Security.Cryptography.Xml.dll
-E:\ProjetoDeExtensaoEmProgramacao\ChatApplication\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
 E:\ProjetoDeExtensaoEmProgramacao\ChatApplication\bin\Debug\net8.0\ChatApplication.Application.dll
 E:\ProjetoDeExtensaoEmProgramacao\ChatApplication\bin\Debug\net8.0\ChatApplication.Application.pdb
+E:\ProjetoDeExtensaoEmProgramacao\ChatApplication\bin\Debug\net8.0\System.Net.WebSockets.WebSocketProtocol.dll

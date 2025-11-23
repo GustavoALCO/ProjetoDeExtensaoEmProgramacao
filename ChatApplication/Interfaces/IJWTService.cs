@@ -1,4 +1,4 @@
-﻿namespace ChatApplication.Application.Interfaces;
+﻿namespace ChatApplication.webApi.Interfaces;
 
 public interface IJWTService
 {

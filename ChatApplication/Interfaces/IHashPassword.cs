@@ -1,6 +1,6 @@
 ﻿using ChatApplication.Dommain.Entities;
 
-namespace ChatApplication.Application.Interfaces;
+namespace ChatApplication.webApi.Interfaces;
 
 public interface IHashPassword
 {

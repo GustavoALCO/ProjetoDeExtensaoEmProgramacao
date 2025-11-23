@@ -3,40 +3,36 @@
   "WorkspaceRootPath": "E:\\ProjetoDeExtensaoEmProgramacao\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B7B58638-D06A-4220-B1C2-98B783D67CF2}|ChatApplication.Application\\ChatApplication.Application.csproj|e:\\projetodeextensaoemprogramacao\\chatapplication.application\\service\\signalrservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B7B58638-D06A-4220-B1C2-98B783D67CF2}|ChatApplication.Application\\ChatApplication.Application.csproj|solutionrelative:chatapplication.application\\service\\signalrservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B7B58638-D06A-4220-B1C2-98B783D67CF2}|ChatApplication.Application\\ChatApplication.Application.csproj|e:\\projetodeextensaoemprogramacao\\chatapplication.application\\service\\chatvalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7B58638-D06A-4220-B1C2-98B783D67CF2}|ChatApplication.Application\\ChatApplication.Application.csproj|solutionrelative:chatapplication.application\\service\\chatvalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B7B58638-D06A-4220-B1C2-98B783D67CF2}|ChatApplication.Application\\ChatApplication.Application.csproj|e:\\projetodeextensaoemprogramacao\\chatapplication.application\\service\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B7B58638-D06A-4220-B1C2-98B783D67CF2}|ChatApplication.Application\\ChatApplication.Application.csproj|solutionrelative:chatapplication.application\\service\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B29A152C-EF4B-465F-9542-F1E9371CB750}|ChatApplication.Dommain\\ChatApplication.Dommain.csproj|e:\\projetodeextensaoemprogramacao\\chatapplication.dommain\\interfaces\\chatuser\\ichatuserrepositoryquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B29A152C-EF4B-465F-9542-F1E9371CB750}|ChatApplication.Dommain\\ChatApplication.Dommain.csproj|solutionrelative:chatapplication.dommain\\interfaces\\chatuser\\ichatuserrepositoryquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B7B58638-D06A-4220-B1C2-98B783D67CF2}|ChatApplication.Application\\ChatApplication.Application.csproj|e:\\projetodeextensaoemprogramacao\\chatapplication.application\\hubs\\chathubs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B7B58638-D06A-4220-B1C2-98B783D67CF2}|ChatApplication.Application\\ChatApplication.Application.csproj|solutionrelative:chatapplication.application\\hubs\\chathubs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2488F320-D0A4-4B65-A927-FF11A75F834D}|ChatApplication.Infra\\ChatApplication.Infra.csproj|e:\\projetodeextensaoemprogramacao\\chatapplication.infra\\repository\\chatuser\\chatuserquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2488F320-D0A4-4B65-A927-FF11A75F834D}|ChatApplication.Infra\\ChatApplication.Infra.csproj|solutionrelative:chatapplication.infra\\repository\\chatuser\\chatuserquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7B58638-D06A-4220-B1C2-98B783D67CF2}|ChatApplication.Application\\ChatApplication.Application.csproj|e:\\projetodeextensaoemprogramacao\\chatapplication.application\\validations\\mensage\\enviarmensagemvalidate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7B58638-D06A-4220-B1C2-98B783D67CF2}|ChatApplication.Application\\ChatApplication.Application.csproj|solutionrelative:chatapplication.application\\validations\\mensage\\enviarmensagemvalidate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7B58638-D06A-4220-B1C2-98B783D67CF2}|ChatApplication.Application\\ChatApplication.Application.csproj|e:\\projetodeextensaoemprogramacao\\chatapplication.application\\features\\commands\\chat\\createchat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7B58638-D06A-4220-B1C2-98B783D67CF2}|ChatApplication.Application\\ChatApplication.Application.csproj|solutionrelative:chatapplication.application\\features\\commands\\chat\\createchat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5361A58-6F9E-431E-BBA7-0B2580DD5B96}|ChatApplication\\ChatApplication.webApi.csproj|e:\\projetodeextensaoemprogramacao\\chatapplication\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A5361A58-6F9E-431E-BBA7-0B2580DD5B96}|ChatApplication\\ChatApplication.webApi.csproj|solutionrelative:chatapplication\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CE3BFF7D-9890-4FC9-8E67-38121FBD7F8F}|ChatApplication.IOC\\ChatApplication.IOC.csproj|e:\\projetodeextensaoemprogramacao\\chatapplication.ioc\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CE3BFF7D-9890-4FC9-8E67-38121FBD7F8F}|ChatApplication.IOC\\ChatApplication.IOC.csproj|solutionrelative:chatapplication.ioc\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B7B58638-D06A-4220-B1C2-98B783D67CF2}|ChatApplication.Application\\ChatApplication.Application.csproj|e:\\projetodeextensaoemprogramacao\\chatapplication.application\\features\\commands\\mensage\\handler\\sendmensagehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B7B58638-D06A-4220-B1C2-98B783D67CF2}|ChatApplication.Application\\ChatApplication.Application.csproj|solutionrelative:chatapplication.application\\features\\commands\\mensage\\handler\\sendmensagehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B7B58638-D06A-4220-B1C2-98B783D67CF2}|ChatApplication.Application\\ChatApplication.Application.csproj|e:\\projetodeextensaoemprogramacao\\chatapplication.application\\interfaces\\isignalrservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B7B58638-D06A-4220-B1C2-98B783D67CF2}|ChatApplication.Application\\ChatApplication.Application.csproj|solutionrelative:chatapplication.application\\interfaces\\isignalrservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B7B58638-D06A-4220-B1C2-98B783D67CF2}|ChatApplication.Application\\ChatApplication.Application.csproj|e:\\projetodeextensaoemprogramacao\\chatapplication.application\\features\\commands\\mensage\\sendmensage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B7B58638-D06A-4220-B1C2-98B783D67CF2}|ChatApplication.Application\\ChatApplication.Application.csproj|solutionrelative:chatapplication.application\\features\\commands\\mensage\\sendmensage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B7B58638-D06A-4220-B1C2-98B783D67CF2}|ChatApplication.Application\\ChatApplication.Application.csproj|e:\\projetodeextensaoemprogramacao\\chatapplication.application\\features\\commands\\users\\handler\\criarusuariohandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B7B58638-D06A-4220-B1C2-98B783D67CF2}|ChatApplication.Application\\ChatApplication.Application.csproj|solutionrelative:chatapplication.application\\features\\commands\\users\\handler\\criarusuariohandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B7B58638-D06A-4220-B1C2-98B783D67CF2}|ChatApplication.Application\\ChatApplication.Application.csproj|e:\\projetodeextensaoemprogramacao\\chatapplication.application\\features\\commands\\chat\\handler\\createchathandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B7B58638-D06A-4220-B1C2-98B783D67CF2}|ChatApplication.Application\\ChatApplication.Application.csproj|solutionrelative:chatapplication.application\\features\\commands\\chat\\handler\\createchathandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B7B58638-D06A-4220-B1C2-98B783D67CF2}|ChatApplication.Application\\ChatApplication.Application.csproj|e:\\projetodeextensaoemprogramacao\\chatapplication.application\\settings\\bdsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7B58638-D06A-4220-B1C2-98B783D67CF2}|ChatApplication.Application\\ChatApplication.Application.csproj|solutionrelative:chatapplication.application\\settings\\bdsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,127 +42,114 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ChatUserQuery.cs",
+              "DocumentMoniker": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Infra\\Repository\\ChatUser\\ChatUserQuery.cs",
+              "RelativeDocumentMoniker": "ChatApplication.Infra\\Repository\\ChatUser\\ChatUserQuery.cs",
+              "ToolTip": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Infra\\Repository\\ChatUser\\ChatUserQuery.cs",
+              "RelativeToolTip": "ChatApplication.Infra\\Repository\\ChatUser\\ChatUserQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T17:31:33.768Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IChatUserRepositoryQuery.cs",
+              "DocumentMoniker": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Dommain\\Interfaces\\ChatUser\\IChatUserRepositoryQuery.cs",
+              "RelativeDocumentMoniker": "ChatApplication.Dommain\\Interfaces\\ChatUser\\IChatUserRepositoryQuery.cs",
+              "ToolTip": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Dommain\\Interfaces\\ChatUser\\IChatUserRepositoryQuery.cs",
+              "RelativeToolTip": "ChatApplication.Dommain\\Interfaces\\ChatUser\\IChatUserRepositoryQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T17:30:50.185Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "JWTService.cs",
-              "DocumentMoniker": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\Service\\JWTService.cs",
-              "RelativeDocumentMoniker": "ChatApplication.Application\\Service\\JWTService.cs",
-              "ToolTip": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\Service\\JWTService.cs",
-              "RelativeToolTip": "ChatApplication.Application\\Service\\JWTService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAANAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "ChatValidation.cs",
+              "DocumentMoniker": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\Service\\ChatValidation.cs",
+              "RelativeDocumentMoniker": "ChatApplication.Application\\Service\\ChatValidation.cs",
+              "ToolTip": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\Service\\ChatValidation.cs",
+              "RelativeToolTip": "ChatApplication.Application\\Service\\ChatValidation.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAUwCAAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T14:24:57.268Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ChatHubs.cs",
-              "DocumentMoniker": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\Hubs\\ChatHubs.cs",
-              "RelativeDocumentMoniker": "ChatApplication.Application\\Hubs\\ChatHubs.cs",
-              "ToolTip": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\Hubs\\ChatHubs.cs",
-              "RelativeToolTip": "ChatApplication.Application\\Hubs\\ChatHubs.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T14:24:45.881Z",
+              "WhenOpened": "2025-11-23T17:24:29.397Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "DependencyInjection.cs",
-              "DocumentMoniker": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.IOC\\DependencyInjection.cs",
-              "RelativeDocumentMoniker": "ChatApplication.IOC\\DependencyInjection.cs",
-              "ToolTip": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.IOC\\DependencyInjection.cs",
-              "RelativeToolTip": "ChatApplication.IOC\\DependencyInjection.cs",
-              "ViewState": "AgIAAEoAAAAAAAAAAAAwwFsAAAAgAAAAAAAAAA==",
+              "Title": "EnviarMensagemValidate.cs",
+              "DocumentMoniker": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\Validations\\Mensage\\EnviarMensagemValidate.cs",
+              "RelativeDocumentMoniker": "ChatApplication.Application\\Validations\\Mensage\\EnviarMensagemValidate.cs",
+              "ToolTip": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\Validations\\Mensage\\EnviarMensagemValidate.cs",
+              "RelativeToolTip": "ChatApplication.Application\\Validations\\Mensage\\EnviarMensagemValidate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T14:23:28.691Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SignalRServices.cs",
-              "DocumentMoniker": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\Service\\SignalRServices.cs",
-              "RelativeDocumentMoniker": "ChatApplication.Application\\Service\\SignalRServices.cs",
-              "ToolTip": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\Service\\SignalRServices.cs",
-              "RelativeToolTip": "ChatApplication.Application\\Service\\SignalRServices.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T14:08:50.767Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ISignalRServices.cs",
-              "DocumentMoniker": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\Interfaces\\ISignalRServices.cs",
-              "RelativeDocumentMoniker": "ChatApplication.Application\\Interfaces\\ISignalRServices.cs",
-              "ToolTip": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\Interfaces\\ISignalRServices.cs",
-              "RelativeToolTip": "ChatApplication.Application\\Interfaces\\ISignalRServices.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T14:07:12.934Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "CreateChatHandler.cs",
-              "DocumentMoniker": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\Features\\Commands\\Chat\\Handler\\CreateChatHandler.cs",
-              "RelativeDocumentMoniker": "ChatApplication.Application\\Features\\Commands\\Chat\\Handler\\CreateChatHandler.cs",
-              "ToolTip": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\Features\\Commands\\Chat\\Handler\\CreateChatHandler.cs",
-              "RelativeToolTip": "ChatApplication.Application\\Features\\Commands\\Chat\\Handler\\CreateChatHandler.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T13:22:00.94Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CriarUsuarioHandler.cs",
-              "DocumentMoniker": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\Features\\Commands\\Users\\Handler\\CriarUsuarioHandler.cs",
-              "RelativeDocumentMoniker": "ChatApplication.Application\\Features\\Commands\\Users\\Handler\\CriarUsuarioHandler.cs",
-              "ToolTip": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\Features\\Commands\\Users\\Handler\\CriarUsuarioHandler.cs",
-              "RelativeToolTip": "ChatApplication.Application\\Features\\Commands\\Users\\Handler\\CriarUsuarioHandler.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T13:19:49.197Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "SendMensage.cs",
-              "DocumentMoniker": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\Features\\Commands\\Mensage\\SendMensage.cs",
-              "RelativeDocumentMoniker": "ChatApplication.Application\\Features\\Commands\\Mensage\\SendMensage.cs",
-              "ToolTip": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\Features\\Commands\\Mensage\\SendMensage.cs",
-              "RelativeToolTip": "ChatApplication.Application\\Features\\Commands\\Mensage\\SendMensage.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T12:55:03.025Z",
+              "WhenOpened": "2025-11-23T17:23:26.295Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "SendMensageHandler.cs",
-              "DocumentMoniker": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\Features\\Commands\\Mensage\\Handler\\SendMensageHandler.cs",
-              "RelativeDocumentMoniker": "ChatApplication.Application\\Features\\Commands\\Mensage\\Handler\\SendMensageHandler.cs",
-              "ToolTip": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\Features\\Commands\\Mensage\\Handler\\SendMensageHandler.cs",
-              "RelativeToolTip": "ChatApplication.Application\\Features\\Commands\\Mensage\\Handler\\SendMensageHandler.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAowDwAAAAAAAAAAAAAAA==",
+              "Title": "CreateChat.cs",
+              "DocumentMoniker": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\Features\\Commands\\Chat\\CreateChat.cs",
+              "RelativeDocumentMoniker": "ChatApplication.Application\\Features\\Commands\\Chat\\CreateChat.cs",
+              "ToolTip": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\Features\\Commands\\Chat\\CreateChat.cs",
+              "RelativeToolTip": "ChatApplication.Application\\Features\\Commands\\Chat\\CreateChat.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T12:53:31.641Z",
+              "WhenOpened": "2025-11-23T17:22:23.254Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication\\appsettings.json",
+              "RelativeDocumentMoniker": "ChatApplication\\appsettings.json",
+              "ToolTip": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication\\appsettings.json",
+              "RelativeToolTip": "ChatApplication\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-23T17:21:46.002Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BDSettings.cs",
+              "DocumentMoniker": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\Settings\\BDSettings.cs",
+              "RelativeDocumentMoniker": "ChatApplication.Application\\Settings\\BDSettings.cs",
+              "ToolTip": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\Settings\\BDSettings.cs",
+              "RelativeToolTip": "ChatApplication.Application\\Settings\\BDSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T17:19:47.605Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.IOC\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "ChatApplication.IOC\\DependencyInjection.cs",
+              "ToolTip": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.IOC\\DependencyInjection.cs",
+              "RelativeToolTip": "ChatApplication.IOC\\DependencyInjection.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAiwCgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T17:17:45.42Z",
               "EditorCaption": ""
             }
           ]

@@ -1,8 +1,8 @@
-﻿using ChatApplication.Application.Interfaces;
-using ChatApplication.Dommain.Entities;
+﻿using ChatApplication.Dommain.Entities;
+using ChatApplication.webApi.Interfaces;
 using Microsoft.AspNetCore.Identity;
 
-namespace ChatApplication.Application.Service;
+namespace ChatApplication.webApi.Service;
 
 public class HashPassword : IHashPassword
 {

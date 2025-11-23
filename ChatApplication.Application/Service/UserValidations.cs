@@ -20,9 +20,9 @@ public class UserValidations : IUserValidations
 
     public async Task<bool> NomeDisponivel(string nome)
     {
-        var (user,c )= await _user.GetUsers(nome, 1, 1);
+        var user= await _user.GetUserByUsername(nome);
 
-        if(user.Count() > 0)
+        if(user.Username != nome)
         {
             return false;
         }

@@ -11,13 +11,10 @@ public class SendMensageHandler : IRequestHandler<SendMensage>
 
     private readonly ISavedImages _savedImages;
 
-    private readonly ISignalRServices _signalRServices;
-
-    public SendMensageHandler(IMensageRepositoryCommands commands, ISavedImages savedImages, ISignalRServices signalRServices)
+    public SendMensageHandler(IMensageRepositoryCommands commands, ISavedImages savedImages)
     {
         _commands = commands;
         _savedImages = savedImages;
-        _signalRServices = signalRServices;
     }
 
     public async Task Handle(SendMensage request, CancellationToken cancellationToken)
@@ -58,7 +55,5 @@ public class SendMensageHandler : IRequestHandler<SendMensage>
         };
 
         await _commands.CreateMensageAsync(mensage);
-
-        await _signalRServices.SendMensageToUserAsync(mensage.ChatId, mensage.UserId, mensage.Content, mensage.ImageMensage);
     }
 }

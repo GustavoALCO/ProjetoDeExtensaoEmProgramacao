@@ -1,12 +1,11 @@
-﻿using ChatApplication.Application.Interfaces;
+﻿using ChatApplication.webApi.Interfaces;
 using ChatApplication.Dommain.Settings;
-using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 
-namespace ChatApplication.Application.Service;
+namespace ChatApplication.webApi.Service;
 
 public class JWTService : IJWTService
 {

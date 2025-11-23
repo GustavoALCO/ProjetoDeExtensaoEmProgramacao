@@ -1,4 +1,5 @@
-﻿using ChatApplication.Dommain.Entities;
+﻿using ChatApplication.Application.Interfaces;
+using ChatApplication.Dommain.Entities;
 using ChatApplication.Infra.Repository.Chat;
 using MediatR;
 
@@ -8,18 +9,27 @@ public class CreateChatHandler : IRequestHandler<CreateChat>
 {
     private readonly IChatRepositoryCommands _command;
 
-    public CreateChatHandler(IChatRepositoryCommands command)
+    private readonly ISavedImages _savedImages;
+
+    public CreateChatHandler(IChatRepositoryCommands command, ISavedImages savedImages)
     {
         _command = command;
+        _savedImages = savedImages;
     }
 
     public async Task Handle(CreateChat request, CancellationToken cancellationToken)
     {
+
         // Adiciona um Id para o chat
         Guid chatId = Guid.NewGuid();
 
         // Criar Variavel para armazenar os usuarios do chat
         List<ChatUsers> chat = new List<ChatUsers>();
+
+        string imagePath = "";
+
+        if(request.Image != null)
+            imagePath = await _savedImages.UploadBase64ImagesAsync(request.Image, 0);
 
         // Adiciona os usuarios ao chat
         foreach (var userId in request.UsersIds)
@@ -35,9 +45,9 @@ public class CreateChatHandler : IRequestHandler<CreateChat>
         var newChat = new Dommain.Entities.Chat
         {
             ChatId = chatId,
-            Name = request.Name,
-            Description = request.Description,
-            Image = request.Image,
+            Name = request.Name ?? "Novo Chat",
+            Description = request.Description ?? "",
+            Image = imagePath,
             IsGroup = request.IsGroup,
             ChatUsers = chat,
         };
