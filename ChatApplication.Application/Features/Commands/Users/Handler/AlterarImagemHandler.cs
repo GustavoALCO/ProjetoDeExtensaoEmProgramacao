@@ -1,5 +1,4 @@
-﻿using ChatApplication.Aplication.Features.Commands.Users;
-using ChatApplication.Application.Interfaces;
+﻿using ChatApplication.Application.Interfaces;
 using ChatApplication.Dommain.Interfaces.User;
 using MediatR;
 

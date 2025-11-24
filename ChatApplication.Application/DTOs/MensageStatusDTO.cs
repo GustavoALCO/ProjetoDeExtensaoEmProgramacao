@@ -1,6 +1,4 @@
-﻿using ChatApplication.Dommain.Entities;
-
-namespace ChatApplication.Aplication.DTOs;
+﻿namespace ChatApplication.Application.DTOs;
 
 public class MensageStatusDTO
 {

@@ -1,18 +1,12 @@
-﻿using ChatApplication.Aplication.Interfaces;
+﻿using ChatApplication.Application.Interfaces;
 using ChatApplication.Application.Features.Commands.Users;
 using ChatApplication.Dommain.Interfaces.User;
 using FluentValidation;
 
-namespace ChatApplication.Aplication.Validations.User;
+namespace ChatApplication.Application.Validations.User;
 
 public class CriarUsuarioValidate : AbstractValidator<CriarUsuario>
 {
-    IUserRepositoryCommands _context;
-
-    public CriarUsuarioValidate(IUserRepositoryCommands context)
-    {
-        _context = context;
-    }
 
     public CriarUsuarioValidate(IValidateBase64 validateBase64, IUserValidations userValidations)
     {

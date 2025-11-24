@@ -5,7 +5,7 @@ using MediatR;
 
 namespace ChatApplication.Application.Features.Commands.Mensage.Handler;
 
-public class SendMensageHandler : IRequestHandler<SendMensage>
+public class SendMensageHandler : IRequestHandler<SendMensage, List<string>?>
 {
     private readonly IMensageRepositoryCommands _commands;
 
@@ -17,7 +17,7 @@ public class SendMensageHandler : IRequestHandler<SendMensage>
         _savedImages = savedImages;
     }
 
-    public async Task Handle(SendMensage request, CancellationToken cancellationToken)
+    public async Task<List<string>?> Handle(SendMensage request, CancellationToken cancellationToken)
     {
         // Cria um Id para a mensagem
         Guid id = Guid.NewGuid();
@@ -55,5 +55,7 @@ public class SendMensageHandler : IRequestHandler<SendMensage>
         };
 
         await _commands.CreateMensageAsync(mensage);
+
+        return mensage.ImageMensage;
     }
 }

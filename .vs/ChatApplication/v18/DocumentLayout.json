@@ -1,14 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\alves\\Downloads\\ProjetoDeExtensaoEmProgramacao\\",
+  "WorkspaceRootPath": "E:\\ProjetoDeExtensaoEmProgramacao\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A5361A58-6F9E-431E-BBA7-0B2580DD5B96}|ChatApplication\\ChatApplication.webApi.csproj|c:\\users\\alves\\downloads\\projetodeextensaoemprogramacao\\chatapplication\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5361A58-6F9E-431E-BBA7-0B2580DD5B96}|ChatApplication\\ChatApplication.webApi.csproj|solutionrelative:chatapplication\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A5361A58-6F9E-431E-BBA7-0B2580DD5B96}|ChatApplication\\ChatApplication.webApi.csproj|e:\\projetodeextensaoemprogramacao\\chatapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5361A58-6F9E-431E-BBA7-0B2580DD5B96}|ChatApplication\\ChatApplication.webApi.csproj|solutionrelative:chatapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A5361A58-6F9E-431E-BBA7-0B2580DD5B96}|ChatApplication\\ChatApplication.webApi.csproj|c:\\users\\alves\\downloads\\projetodeextensaoemprogramacao\\chatapplication\\interfaces\\ihashpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5361A58-6F9E-431E-BBA7-0B2580DD5B96}|ChatApplication\\ChatApplication.webApi.csproj|solutionrelative:chatapplication\\interfaces\\ihashpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A5361A58-6F9E-431E-BBA7-0B2580DD5B96}|ChatApplication\\ChatApplication.webApi.csproj|e:\\projetodeextensaoemprogramacao\\chatapplication\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A5361A58-6F9E-431E-BBA7-0B2580DD5B96}|ChatApplication\\ChatApplication.webApi.csproj|solutionrelative:chatapplication\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7B58638-D06A-4220-B1C2-98B783D67CF2}|ChatApplication.Application\\ChatApplication.Application.csproj|e:\\projetodeextensaoemprogramacao\\chatapplication.application\\service\\savedimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7B58638-D06A-4220-B1C2-98B783D67CF2}|ChatApplication.Application\\ChatApplication.Application.csproj|solutionrelative:chatapplication.application\\service\\savedimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7B58638-D06A-4220-B1C2-98B783D67CF2}|ChatApplication.Application\\ChatApplication.Application.csproj|e:\\projetodeextensaoemprogramacao\\chatapplication.application\\settings\\blobsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7B58638-D06A-4220-B1C2-98B783D67CF2}|ChatApplication.Application\\ChatApplication.Application.csproj|solutionrelative:chatapplication.application\\settings\\blobsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7B58638-D06A-4220-B1C2-98B783D67CF2}|ChatApplication.Application\\ChatApplication.Application.csproj|e:\\projetodeextensaoemprogramacao\\chatapplication.application\\service\\chatvalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7B58638-D06A-4220-B1C2-98B783D67CF2}|ChatApplication.Application\\ChatApplication.Application.csproj|solutionrelative:chatapplication.application\\service\\chatvalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5361A58-6F9E-431E-BBA7-0B2580DD5B96}|ChatApplication\\ChatApplication.webApi.csproj|e:\\projetodeextensaoemprogramacao\\chatapplication\\controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5361A58-6F9E-431E-BBA7-0B2580DD5B96}|ChatApplication\\ChatApplication.webApi.csproj|solutionrelative:chatapplication\\controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,28 +42,80 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "IHashPassword.cs",
-              "DocumentMoniker": "C:\\Users\\alves\\Downloads\\ProjetoDeExtensaoEmProgramacao\\ChatApplication\\Interfaces\\IHashPassword.cs",
-              "RelativeDocumentMoniker": "ChatApplication\\Interfaces\\IHashPassword.cs",
-              "ToolTip": "C:\\Users\\alves\\Downloads\\ProjetoDeExtensaoEmProgramacao\\ChatApplication\\Interfaces\\IHashPassword.cs",
-              "RelativeToolTip": "ChatApplication\\Interfaces\\IHashPassword.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAgAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication\\Program.cs",
+              "RelativeDocumentMoniker": "ChatApplication\\Program.cs",
+              "ToolTip": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication\\Program.cs",
+              "RelativeToolTip": "ChatApplication\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-24T15:37:26.323Z",
+              "WhenOpened": "2025-11-24T23:27:11.526Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\alves\\Downloads\\ProjetoDeExtensaoEmProgramacao\\ChatApplication\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "ChatApplication\\Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\alves\\Downloads\\ProjetoDeExtensaoEmProgramacao\\ChatApplication\\Controllers\\UserController.cs",
-              "RelativeToolTip": "ChatApplication\\Controllers\\UserController.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAkwCYAAAAoAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication\\appsettings.json",
+              "RelativeDocumentMoniker": "ChatApplication\\appsettings.json",
+              "ToolTip": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication\\appsettings.json",
+              "RelativeToolTip": "ChatApplication\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-24T23:18:16.552Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BlobSettings.cs",
+              "DocumentMoniker": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\Settings\\BlobSettings.cs",
+              "RelativeDocumentMoniker": "ChatApplication.Application\\Settings\\BlobSettings.cs",
+              "ToolTip": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\Settings\\BlobSettings.cs",
+              "RelativeToolTip": "ChatApplication.Application\\Settings\\BlobSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAYAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-24T15:35:40.693Z",
+              "WhenOpened": "2025-11-24T23:14:29.16Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SavedImage.cs",
+              "DocumentMoniker": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\Service\\SavedImage.cs",
+              "RelativeDocumentMoniker": "ChatApplication.Application\\Service\\SavedImage.cs",
+              "ToolTip": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\Service\\SavedImage.cs",
+              "RelativeToolTip": "ChatApplication.Application\\Service\\SavedImage.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAawBEAAABVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T23:11:50.831Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ChatValidation.cs",
+              "DocumentMoniker": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\Service\\ChatValidation.cs",
+              "RelativeDocumentMoniker": "ChatApplication.Application\\Service\\ChatValidation.cs",
+              "ToolTip": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\Service\\ChatValidation.cs",
+              "RelativeToolTip": "ChatApplication.Application\\Service\\ChatValidation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T23:11:24.053Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ChatController.cs",
+              "DocumentMoniker": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication\\Controllers\\ChatController.cs",
+              "RelativeDocumentMoniker": "ChatApplication\\Controllers\\ChatController.cs",
+              "ToolTip": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication\\Controllers\\ChatController.cs",
+              "RelativeToolTip": "ChatApplication\\Controllers\\ChatController.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAywCcAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T22:54:50.579Z",
               "EditorCaption": ""
             }
           ]

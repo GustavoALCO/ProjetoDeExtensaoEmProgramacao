@@ -1,25 +1,38 @@
-using ChatApplication.Aplication.Settings;
-using ChatApplication.Dommain.Settings;
+using ChatApplication.Application.Settings;
+using ChatApplication.Dommain.Interfaces.UserFriend;
+using ChatApplication.Infra.Repository.UserFriend;
 using ChatApplication.IOC;
+using ChatApplication.webApi.Interfaces;
+using ChatApplication.webApi.Service;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Adicionando Configurações de Injeção de Dependência para o token jwt
 builder.Services.Configure<JWTSettings>(builder.Configuration.GetSection("Jwt"));
-// Adicionando Configuração do banco de dados
 builder.Services.Configure<BDSettings>(builder.Configuration.GetSection("ConnectionStrings"));
+builder.Services.Configure<BlobSettings>(builder.Configuration.GetSection("BlobSettings"));
+
+builder.Services.AddScoped<IJWTService, JWTService>();
+builder.Services.AddScoped<IHashPassword, HashPassword>();
+builder.Services.AddScoped<SignalRServices>();
+builder.Services.AddScoped<IUserFriendRepositoryCommands, UserFriendsRepositoryCommands>();
+
+builder.Services.AddScoped<UserFriendsRepositoryQuery>();
 
 builder.Services.AddControllers();
-
 builder.Services.AddEndpointsApiExplorer();
 
+builder.Services.AddInfra(builder.Configuration);
+builder.Services.Authentication(builder.Configuration);
+builder.Services.AddInterfaces();
+builder.Services.AddInterfacesServices();
+builder.Services.AddInterfacesValidators();
+builder.Services.AddFluentValidate();
+builder.Services.AddMediator();
 builder.Services.AddSignalR();
-
 builder.Services.AddSwagger();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -28,6 +41,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+app.UseAuthentication();   
 app.UseAuthorization();
 
 app.MapControllers();

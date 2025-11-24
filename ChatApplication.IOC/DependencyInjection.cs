@@ -1,10 +1,15 @@
-﻿using ChatApplication.Aplication.Settings;
+﻿using ChatApplication.Application.Features.Commands.Mensage;
+using ChatApplication.Application.Features.Commands.Users;
+using ChatApplication.Application.Interfaces;
+using ChatApplication.Application.Service;
+using ChatApplication.Application.Settings;
+using ChatApplication.Application.Validations.Mensage;
+using ChatApplication.Application.Validations.User;
 using ChatApplication.Dommain.Interfaces.Chat;
 using ChatApplication.Dommain.Interfaces.Mensage;
 using ChatApplication.Dommain.Interfaces.MensageStatus;
 using ChatApplication.Dommain.Interfaces.User;
 using ChatApplication.Dommain.Interfaces.UserFriend;
-using ChatApplication.Dommain.Settings;
 using ChatApplication.Infra.Context;
 using ChatApplication.Infra.Repository.Chat;
 using ChatApplication.Infra.Repository.Mensage;
@@ -56,7 +61,9 @@ public static class DependencyInjection
     public static IServiceCollection AddInterfacesValidators(this IServiceCollection services)
     {
 
-        
+        services.AddScoped<IValidator<CriarUsuario>, CriarUsuarioValidate>();
+
+        services.AddScoped<IValidator<SendMensage>, EnviarMensagemValidate>();
 
         return services;
     }
@@ -83,25 +90,29 @@ public static class DependencyInjection
         services.AddScoped<IUserFriendRepositoryCommands, UserFriendsRepositoryCommands>();
         services.AddScoped<IUserFriendRepositoryQuery, UserFriendsRepositoryQuery>();
 
+
         return services;
     }
 
     public static IServiceCollection AddInterfacesServices(this IServiceCollection services)
     {
-       
+        services.AddScoped<ISavedImages, SavedImage>();
+        services.AddScoped<IUserValidations, UserValidations>();
+        services.AddScoped<IValidateBase64, ValidateBase64>();
+
         return services;
     }
 
     public static IServiceCollection AddMediator(this IServiceCollection services)
     {
-        services.AddMediatR(ctg => ctg.RegisterServicesFromAssembly(Assembly.Load("ChatApplication.Aplication")));
+        services.AddMediatR(ctg => ctg.RegisterServicesFromAssembly(Assembly.Load("ChatApplication.Application")));
 
         return services;
     }
 
     public static IServiceCollection AddFluentValidate(this IServiceCollection services)
     {
-        services.AddValidatorsFromAssembly(Assembly.Load("ChatApplication.Aplication"));
+        services.AddValidatorsFromAssembly(Assembly.Load("ChatApplication.Application"));
 
         return services;
     }

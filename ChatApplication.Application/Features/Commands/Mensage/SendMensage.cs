@@ -1,9 +1,8 @@
-﻿using ChatApplication.Dommain.Entities;
-using MediatR;
+﻿using MediatR;
 
 namespace ChatApplication.Application.Features.Commands.Mensage;
 
-public class SendMensage : IRequest
+public class SendMensage : IRequest<List<string>?>
 {
     public Guid ChatId { get; set; }
 

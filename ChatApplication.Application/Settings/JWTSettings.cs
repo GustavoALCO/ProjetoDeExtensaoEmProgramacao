@@ -1,4 +1,4 @@
-﻿namespace ChatApplication.Dommain.Settings;
+﻿namespace ChatApplication.Application.Settings;
 
 public class JWTSettings
 {

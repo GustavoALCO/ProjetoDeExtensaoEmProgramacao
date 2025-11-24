@@ -9,18 +9,21 @@ public class UserFriendsRepositoryCommands : IUserFriendRepositoryCommands
 {
     private readonly ContextDB _db;
 
-    private readonly Logger<UserFriendsRepositoryCommands> _logger;
-
     private readonly UserFriendsRepositoryQuery _query;
 
-    public UserFriendsRepositoryCommands(Logger<UserFriendsRepositoryCommands> logger, ContextDB db, UserFriendsRepositoryQuery query)
+    private readonly ILogger<UserFriendsRepositoryCommands> _logger;
+
+    public UserFriendsRepositoryCommands(
+        ILogger<UserFriendsRepositoryCommands> logger,
+        ContextDB db,
+        UserFriendsRepositoryQuery query)
     {
         _logger = logger;
         _db = db;
         _query = query;
     }
 
-    public async Task RequestFriendshipAsync(Guid userId, Guid friendId, bool request)
+    public async Task RequestFriendshipAsync(Guid userId, Guid friendId, bool? request)
     {
         var userfriend = new Dommain.Entities.UserFriend
         {
@@ -37,21 +40,35 @@ public class UserFriendsRepositoryCommands : IUserFriendRepositoryCommands
         _logger.LogInformation($"Convite de Amizade enviado do Usuario {userId}, para o {friendId}. \n A resposta do Amigo foi de {request}");
     }
 
-    public async Task RemoveFriendAsync(Guid userId, Guid friendId)
+    //public async Task RemoveFriendAsync(u)
+    //{
+    //    var query = await _query.GetUserFriend(userId, friendId);
+
+    //    if (query == null)
+    //    {
+    //        _logger.LogInformation("Os Usuarios nao sao amigos. entao a operacao nao sera possivel");
+    //        throw new Exception("Os Usuarios nao sao amigos. entao a operacao nao sera possivel");
+    //    }
+
+    //    var friend = _db.Remove(query);
+
+    //    await _db.SaveChangesAsync();
+
+    //    _logger.LogInformation($"Convite de Amizade enviado do Usuario {userId}, para o {friendId}. \n A resposta do Amigo foi de ");
+    //}
+
+    public async Task RequestFriendshipAsync(Guid userId, Guid friendId)
     {
-        var query = await _query.GetUserFriend(userId, friendId);
-
-        if (query == null)
+        var userfriend = new Dommain.Entities.UserFriend
         {
-            _logger.LogInformation("Os Usuarios nao sao amigos. entao a operacao nao sera possivel");
-            throw new Exception("Os Usuarios nao sao amigos. entao a operacao nao sera possivel");
-        }
+            UserId = userId,
+            FriendId = friendId,
+            IsRequest = true,
+            CreatedAt = DateTime.UtcNow,
+        };
 
-        var friend = _db.Remove(query);
+        var friend = await _db.UserFriend.AddAsync(userfriend);
 
         await _db.SaveChangesAsync();
-
-        _logger.LogInformation($"Convite de Amizade enviado do Usuario {userId}, para o {friendId}. \n A resposta do Amigo foi de ");
     }
-
 }

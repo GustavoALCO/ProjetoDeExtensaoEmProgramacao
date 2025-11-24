@@ -1,5 +1,4 @@
-﻿using ChatApplication.Aplication.DTOs;
-using ChatApplication.Aplication.Features.Querys.Chats;
+﻿using ChatApplication.Application.DTOs;
 using ChatApplication.Dommain.Interfaces.Chat;
 using MediatR;
 

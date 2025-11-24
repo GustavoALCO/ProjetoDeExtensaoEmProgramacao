@@ -1,10 +1,9 @@
-﻿using ChatApplication.Aplication.DTOs;
-using ChatApplication.Aplication.Features.Querys.Mensage;
-using ChatApplication.Dommain.Entities;
+﻿using ChatApplication.Application.DTOs;
+using ChatApplication.Application.Features.Querys.Mensage;
 using ChatApplication.Dommain.Interfaces.Mensage;
 using MediatR;
 
-namespace ChatApplication.Aplication.Features.Querys.Mensage.Handler;
+namespace ChatApplication.Application.Features.Querys.Mensage.Handler;
 
 public class BuscarMensagensHandler : IRequestHandler<BuscarMensagens, FilterDTO<Dommain.Entities.Mensage>>
 {

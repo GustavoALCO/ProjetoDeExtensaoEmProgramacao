@@ -22,7 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ChatApplication.Application\ChatApplication.Aplication.csproj" />
+    <ProjectReference Include="..\ChatApplication.Application\ChatApplication.Application.csproj" />
     <ProjectReference Include="..\ChatApplication.Application\ChatApplication.Application.csproj" />
     <ProjectReference Include="..\ChatApplication.Dommain\ChatApplication.Dommain.csproj" />
     <ProjectReference Include="..\ChatApplication.Infra\ChatApplication.Infra.csproj" />

@@ -8,7 +8,11 @@ public class UserFriend
 
     public Guid FriendId { get; set; }
 
-    public bool IsAccepted { get; set; } = false; 
+    public bool? IsAccepted { get; set; } 
+
+    public bool? IsBlocked { get; set; }
+
+    public bool? IsRequest { get; set; }
 
     public DateTime CreatedAt { get; set; } 
 

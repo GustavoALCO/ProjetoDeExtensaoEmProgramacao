@@ -1,4 +1,4 @@
-﻿using ChatApplication.Aplication.DTOs;
+﻿using ChatApplication.Application.DTOs;
 using MediatR;
 
 namespace ChatApplication.Aplication.Features.Querys.Chats;

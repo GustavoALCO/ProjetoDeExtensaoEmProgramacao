@@ -1,4 +1,4 @@
-﻿namespace ChatApplication.Aplication.Interfaces;
+﻿namespace ChatApplication.Application.Interfaces;
 
 public interface IUserValidations
 {

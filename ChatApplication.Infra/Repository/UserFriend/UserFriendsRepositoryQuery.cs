@@ -10,9 +10,9 @@ public class UserFriendsRepositoryQuery : IUserFriendRepositoryQuery
 {
     private readonly ContextDB _db;
 
-    private readonly Logger<UserFriendsRepositoryQuery> _logger;
+    private readonly ILogger<UserFriendsRepositoryQuery> _logger;
 
-    public UserFriendsRepositoryQuery(Logger<UserFriendsRepositoryQuery> logger, ContextDB db)
+    public UserFriendsRepositoryQuery(ILogger<UserFriendsRepositoryQuery> logger, ContextDB db)
     {
         _logger = logger;
         _db = db;

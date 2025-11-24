@@ -1,7 +1,7 @@
-﻿using ChatApplication.Aplication.Interfaces;
+﻿using ChatApplication.Application.Interfaces;
 using Microsoft.Extensions.Logging;
 
-namespace ChatApplication.Aplication.Service;
+namespace ChatApplication.Application.Service;
 
 public class ValidateBase64 : IValidateBase64
 {

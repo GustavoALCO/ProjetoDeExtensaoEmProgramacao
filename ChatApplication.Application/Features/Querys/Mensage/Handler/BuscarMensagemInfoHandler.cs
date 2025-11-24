@@ -1,10 +1,9 @@
-﻿using ChatApplication.Aplication.DTOs;
-using ChatApplication.Aplication.Features.Querys.Mensage;
+﻿using ChatApplication.Application.DTOs;
 using ChatApplication.Dommain.Interfaces.Mensage;
 using ChatApplication.Dommain.Interfaces.User;
 using MediatR;
 
-namespace ChatApplication.Aplication.Features.Querys.Mensage.Handler;
+namespace ChatApplication.Application.Features.Querys.Mensage.Handler;
 
 public class BuscarMensagemInfoHandler : IRequestHandler<BuscarMensagemInfo, MensageDTO>
 {

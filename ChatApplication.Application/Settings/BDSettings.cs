@@ -1,4 +1,4 @@
-﻿namespace ChatApplication.Aplication.Settings;
+﻿namespace ChatApplication.Application.Settings;
 
 public class BDSettings
 {

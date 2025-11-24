@@ -1,20 +1,20 @@
 ﻿using Azure.Storage.Blobs;
+using ChatApplication.Application.Interfaces;
 using ChatApplication.Application.Settings;
 using Microsoft.Extensions.Options;
 using System.Text.RegularExpressions;
 
-namespace ChatApplication.Aplication.Service;
+namespace ChatApplication.Application.Service;
 
-public class SavedImage
+public class SavedImage : ISavedImages
 {
     private readonly BlobSettings _blobService;
 
     public SavedImage(IOptions<BlobSettings> configuration)
     {
         _blobService = configuration.Value;
-
-
     }
+
     public async Task<string> UploadBase64ImagesAsync(string base64Images, int indiceContainer)
     {
 
