@@ -1,114 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.IOC\\ChatApplication.IOC.csproj": {}
+    "C:\\Users\\alves\\Downloads\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.IOC\\ChatApplication.IOC.csproj": {}
   },
   "projects": {
-    "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\ChatApplication.Aplication.csproj": {
+    "C:\\Users\\alves\\Downloads\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\ChatApplication.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\ChatApplication.Aplication.csproj",
-        "projectName": "ChatApplication.Aplication",
-        "projectPath": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\ChatApplication.Aplication.csproj",
-        "packagesPath": "C:\\Users\\alves\\.nuget\\packages\\",
-        "outputPath": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\alves\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net8.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
-            "projectReferences": {
-              "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Dommain\\ChatApplication.Dommain.csproj": {
-                "projectPath": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Dommain\\ChatApplication.Dommain.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "10.0.100"
-      },
-      "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
-          "dependencies": {
-            "Azure.Storage.Blobs": {
-              "target": "Package",
-              "version": "[12.24.1, )"
-            },
-            "FluentValidation": {
-              "target": "Package",
-              "version": "[12.0.0, )"
-            },
-            "MediatR": {
-              "target": "Package",
-              "version": "[13.0.0, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.21, 8.0.21]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.21, 8.0.21]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[8.0.21, 8.0.21]"
-            }
-          ],
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100-rc.2.25502.107/PortableRuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\ChatApplication.Application.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\ChatApplication.Application.csproj",
+        "projectUniqueName": "C:\\Users\\alves\\Downloads\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\ChatApplication.Application.csproj",
         "projectName": "ChatApplication.Application",
-        "projectPath": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\ChatApplication.Application.csproj",
+        "projectPath": "C:\\Users\\alves\\Downloads\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\ChatApplication.Application.csproj",
         "packagesPath": "C:\\Users\\alves\\.nuget\\packages\\",
-        "outputPath": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\obj\\",
+        "outputPath": "C:\\Users\\alves\\Downloads\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -129,8 +32,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Dommain\\ChatApplication.Dommain.csproj": {
-                "projectPath": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Dommain\\ChatApplication.Dommain.csproj"
+              "C:\\Users\\alves\\Downloads\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Dommain\\ChatApplication.Dommain.csproj": {
+                "projectPath": "C:\\Users\\alves\\Downloads\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Dommain\\ChatApplication.Dommain.csproj"
               }
             }
           }
@@ -179,20 +82,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.22, 8.0.22]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.22, 8.0.22]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[8.0.22, 8.0.22]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -202,14 +91,14 @@
         }
       }
     },
-    "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Dommain\\ChatApplication.Dommain.csproj": {
+    "C:\\Users\\alves\\Downloads\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Dommain\\ChatApplication.Dommain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Dommain\\ChatApplication.Dommain.csproj",
+        "projectUniqueName": "C:\\Users\\alves\\Downloads\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Dommain\\ChatApplication.Dommain.csproj",
         "projectName": "ChatApplication.Dommain",
-        "projectPath": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Dommain\\ChatApplication.Dommain.csproj",
+        "projectPath": "C:\\Users\\alves\\Downloads\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Dommain\\ChatApplication.Dommain.csproj",
         "packagesPath": "C:\\Users\\alves\\.nuget\\packages\\",
-        "outputPath": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Dommain\\obj\\",
+        "outputPath": "C:\\Users\\alves\\Downloads\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Dommain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -258,20 +147,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.22, 8.0.22]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.22, 8.0.22]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[8.0.22, 8.0.22]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -281,14 +156,14 @@
         }
       }
     },
-    "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Infra\\ChatApplication.Infra.csproj": {
+    "C:\\Users\\alves\\Downloads\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Infra\\ChatApplication.Infra.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Infra\\ChatApplication.Infra.csproj",
+        "projectUniqueName": "C:\\Users\\alves\\Downloads\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Infra\\ChatApplication.Infra.csproj",
         "projectName": "ChatApplication.Infra",
-        "projectPath": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Infra\\ChatApplication.Infra.csproj",
+        "projectPath": "C:\\Users\\alves\\Downloads\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Infra\\ChatApplication.Infra.csproj",
         "packagesPath": "C:\\Users\\alves\\.nuget\\packages\\",
-        "outputPath": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Infra\\obj\\",
+        "outputPath": "C:\\Users\\alves\\Downloads\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Infra\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -309,8 +184,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Dommain\\ChatApplication.Dommain.csproj": {
-                "projectPath": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Dommain\\ChatApplication.Dommain.csproj"
+              "C:\\Users\\alves\\Downloads\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Dommain\\ChatApplication.Dommain.csproj": {
+                "projectPath": "C:\\Users\\alves\\Downloads\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Dommain\\ChatApplication.Dommain.csproj"
               }
             }
           }
@@ -357,20 +232,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.22, 8.0.22]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.22, 8.0.22]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[8.0.22, 8.0.22]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -380,14 +241,14 @@
         }
       }
     },
-    "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.IOC\\ChatApplication.IOC.csproj": {
+    "C:\\Users\\alves\\Downloads\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.IOC\\ChatApplication.IOC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.IOC\\ChatApplication.IOC.csproj",
+        "projectUniqueName": "C:\\Users\\alves\\Downloads\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.IOC\\ChatApplication.IOC.csproj",
         "projectName": "ChatApplication.IOC",
-        "projectPath": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.IOC\\ChatApplication.IOC.csproj",
+        "projectPath": "C:\\Users\\alves\\Downloads\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.IOC\\ChatApplication.IOC.csproj",
         "packagesPath": "C:\\Users\\alves\\.nuget\\packages\\",
-        "outputPath": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.IOC\\obj\\",
+        "outputPath": "C:\\Users\\alves\\Downloads\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.IOC\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -408,17 +269,17 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\ChatApplication.Aplication.csproj": {
-                "projectPath": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\ChatApplication.Aplication.csproj"
+              "C:\\Users\\alves\\Downloads\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\ChatApplication.Aplication.csproj": {
+                "projectPath": "C:\\Users\\alves\\Downloads\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\ChatApplication.Aplication.csproj"
               },
-              "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\ChatApplication.Application.csproj": {
-                "projectPath": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\ChatApplication.Application.csproj"
+              "C:\\Users\\alves\\Downloads\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\ChatApplication.Application.csproj": {
+                "projectPath": "C:\\Users\\alves\\Downloads\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Application\\ChatApplication.Application.csproj"
               },
-              "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Dommain\\ChatApplication.Dommain.csproj": {
-                "projectPath": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Dommain\\ChatApplication.Dommain.csproj"
+              "C:\\Users\\alves\\Downloads\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Dommain\\ChatApplication.Dommain.csproj": {
+                "projectPath": "C:\\Users\\alves\\Downloads\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Dommain\\ChatApplication.Dommain.csproj"
               },
-              "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Infra\\ChatApplication.Infra.csproj": {
-                "projectPath": "E:\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Infra\\ChatApplication.Infra.csproj"
+              "C:\\Users\\alves\\Downloads\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Infra\\ChatApplication.Infra.csproj": {
+                "projectPath": "C:\\Users\\alves\\Downloads\\ProjetoDeExtensaoEmProgramacao\\ChatApplication.Infra\\ChatApplication.Infra.csproj"
               }
             }
           }
@@ -499,20 +360,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.22, 8.0.22]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.22, 8.0.22]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[8.0.22, 8.0.22]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
