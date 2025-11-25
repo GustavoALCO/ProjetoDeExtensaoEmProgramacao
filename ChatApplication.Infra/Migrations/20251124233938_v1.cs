@@ -1,0 +1,191 @@
+﻿using System;
+using System.Collections.Generic;
+using Microsoft.EntityFrameworkCore.Migrations;
+
+#nullable disable
+
+namespace ChatApplication.Infra.Migrations
+{
+    /// <inheritdoc />
+    public partial class v1 : Migration
+    {
+        /// <inheritdoc />
+        protected override void Up(MigrationBuilder migrationBuilder)
+        {
+            migrationBuilder.CreateTable(
+                name: "Chat",
+                columns: table => new
+                {
+                    ChatId = table.Column<Guid>(type: "uuid", nullable: false),
+                    IsGroup = table.Column<bool>(type: "boolean", nullable: false),
+                    Name = table.Column<string>(type: "text", nullable: false),
+                    Description = table.Column<string>(type: "text", nullable: true),
+                    Image = table.Column<string>(type: "text", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Chat", x => x.ChatId);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "User",
+                columns: table => new
+                {
+                    UserId = table.Column<Guid>(type: "uuid", nullable: false),
+                    Username = table.Column<string>(type: "text", nullable: false),
+                    Password = table.Column<string>(type: "text", nullable: false),
+                    Description = table.Column<string>(type: "text", nullable: true),
+                    Image = table.Column<string>(type: "text", nullable: true),
+                    IsValid = table.Column<bool>(type: "boolean", nullable: false),
+                    CreateData = table.Column<DateTime>(type: "timestamp with time zone", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_User", x => x.UserId);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Mensage",
+                columns: table => new
+                {
+                    MensageId = table.Column<Guid>(type: "uuid", nullable: false),
+                    ChatId = table.Column<Guid>(type: "uuid", nullable: false),
+                    UserId = table.Column<Guid>(type: "uuid", nullable: false),
+                    Content = table.Column<string>(type: "text", nullable: true),
+                    ImageMensage = table.Column<List<string>>(type: "text[]", nullable: false),
+                    SendMensage = table.Column<DateTime>(type: "timestamp with time zone", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Mensage", x => x.MensageId);
+                    table.ForeignKey(
+                        name: "FK_Mensage_Chat_ChatId",
+                        column: x => x.ChatId,
+                        principalTable: "Chat",
+                        principalColumn: "ChatId",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "chatUsers",
+                columns: table => new
+                {
+                    ChatId = table.Column<Guid>(type: "uuid", nullable: false),
+                    UserId = table.Column<Guid>(type: "uuid", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_chatUsers", x => new { x.ChatId, x.UserId });
+                    table.ForeignKey(
+                        name: "FK_chatUsers_Chat_ChatId",
+                        column: x => x.ChatId,
+                        principalTable: "Chat",
+                        principalColumn: "ChatId",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_chatUsers_User_UserId",
+                        column: x => x.UserId,
+                        principalTable: "User",
+                        principalColumn: "UserId",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "UserFriend",
+                columns: table => new
+                {
+                    UserId = table.Column<Guid>(type: "uuid", nullable: false),
+                    FriendId = table.Column<Guid>(type: "uuid", nullable: false),
+                    IsAccepted = table.Column<bool>(type: "boolean", nullable: true),
+                    IsBlocked = table.Column<bool>(type: "boolean", nullable: true),
+                    IsRequest = table.Column<bool>(type: "boolean", nullable: true),
+                    CreatedAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_UserFriend", x => new { x.UserId, x.FriendId });
+                    table.ForeignKey(
+                        name: "FK_UserFriend_User_FriendId",
+                        column: x => x.FriendId,
+                        principalTable: "User",
+                        principalColumn: "UserId",
+                        onDelete: ReferentialAction.Restrict);
+                    table.ForeignKey(
+                        name: "FK_UserFriend_User_UserId",
+                        column: x => x.UserId,
+                        principalTable: "User",
+                        principalColumn: "UserId",
+                        onDelete: ReferentialAction.Restrict);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "MensageStatus",
+                columns: table => new
+                {
+                    MensageID = table.Column<Guid>(type: "uuid", nullable: false),
+                    RecibeUserId = table.Column<Guid>(type: "uuid", nullable: false),
+                    IsReceived = table.Column<bool>(type: "boolean", nullable: false),
+                    ReaAt = table.Column<DateTime>(type: "timestamp with time zone", nullable: true),
+                    MensageId = table.Column<Guid>(type: "uuid", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_MensageStatus", x => x.MensageID);
+                    table.ForeignKey(
+                        name: "FK_MensageStatus_Mensage_MensageID",
+                        column: x => x.MensageID,
+                        principalTable: "Mensage",
+                        principalColumn: "MensageId",
+                        onDelete: ReferentialAction.Restrict);
+                    table.ForeignKey(
+                        name: "FK_MensageStatus_Mensage_MensageId",
+                        column: x => x.MensageId,
+                        principalTable: "Mensage",
+                        principalColumn: "MensageId",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_chatUsers_UserId",
+                table: "chatUsers",
+                column: "UserId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Mensage_ChatId",
+                table: "Mensage",
+                column: "ChatId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_MensageStatus_MensageId",
+                table: "MensageStatus",
+                column: "MensageId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_UserFriend_FriendId",
+                table: "UserFriend",
+                column: "FriendId");
+        }
+
+        /// <inheritdoc />
+        protected override void Down(MigrationBuilder migrationBuilder)
+        {
+            migrationBuilder.DropTable(
+                name: "chatUsers");
+
+            migrationBuilder.DropTable(
+                name: "MensageStatus");
+
+            migrationBuilder.DropTable(
+                name: "UserFriend");
+
+            migrationBuilder.DropTable(
+                name: "Mensage");
+
+            migrationBuilder.DropTable(
+                name: "User");
+
+            migrationBuilder.DropTable(
+                name: "Chat");
+        }
+    }
+}

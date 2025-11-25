@@ -1,4 +1,5 @@
 ﻿using Azure.Storage.Blobs;
+using Azure.Storage.Blobs.Models;
 using ChatApplication.Application.Interfaces;
 using ChatApplication.Application.Settings;
 using Microsoft.Extensions.Options;
@@ -15,34 +16,54 @@ public class SavedImage : ISavedImages
         _blobService = configuration.Value;
     }
 
-    public async Task<string> UploadBase64ImagesAsync(string base64Images, int indiceContainer)
+    public async Task<string> UploadBase64ImagesAsync(string base64Image, int indiceContainer)
     {
+        if (string.IsNullOrWhiteSpace(base64Image))
+            throw new ArgumentException("A imagem base64 está vazia.");
 
+        // Verifica índice do container
+        if (indiceContainer < 0 || indiceContainer >= _blobService.Container.Length)
+            throw new ArgumentOutOfRangeException(nameof(indiceContainer), "Índice do container inválido.");
 
-        var fileName = $"{Guid.NewGuid()}.jpg";
-            // Gera um nome único para a imagem
+        // Detecta extensão da imagem
+        var match = Regex.Match(base64Image, @"^data:image\/(?<ext>[a-zA-Z0-9]+);base64,");
+        var extension = match.Success ? match.Groups["ext"].Value : "jpg";
 
-            var data = new Regex(@"^data:image\/[a-z]+;base64,").Replace(base64Images, "");
-            // Remove a parte desnecessária do base64
+        // Remove prefixo da string base64
+        var base64Data = match.Success
+            ? base64Image.Substring(match.Value.Length)
+            : base64Image;
 
-            byte[] imageBytes = Convert.FromBase64String(data);
-            // Converte a string base64 em um array de bytes
+        byte[] imageBytes;
 
-            var blobClient = new BlobClient(_blobService.ConnectionString, _blobService.Container[indiceContainer], fileName);
-            // Cria um cliente para o Blob Storage
+        try
+        {
+            imageBytes = Convert.FromBase64String(base64Data);
+        }
+        catch
+        {
+            throw new FormatException("A string Base64 não está em um formato válido.");
+        }
 
-            // Envia a imagem para o Storage de forma assíncrona
-            using (var stream = new MemoryStream(imageBytes))
-            {
-                await blobClient.UploadAsync(stream);
-            }
+        var fileName = $"{Guid.NewGuid()}.{extension}";
 
-            var imageUrls = blobClient.Uri.AbsoluteUri; // Adiciona a URL da imagem à lista
-        
+        var blobClient = new BlobClient(
+            _blobService.ConnectionString,
+            _blobService.Container[indiceContainer],
+            fileName
+        );
 
-        return imageUrls;
-        // Retorna URL das imagens
+        using var stream = new MemoryStream(imageBytes);
+
+        // Envia com ContentType correto
+        await blobClient.UploadAsync(stream, new BlobHttpHeaders
+        {
+            ContentType = $"image/{extension}"
+        });
+
+        return blobClient.Uri.AbsoluteUri;
     }
+
 
     public async Task<List<string>> UploadListBase64ImagesAsync(List<string> base64Images, int indiceContainer)
     {

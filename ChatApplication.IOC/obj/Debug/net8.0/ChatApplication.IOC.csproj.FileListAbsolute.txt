@@ -41,10 +41,8 @@ C:\Users\alves\Downloads\projetoFaculdate\ProjetoDeExtensaoEmProgramacao\ChatApp
 C:\Users\alves\Downloads\ProjetoDeExtensaoEmProgramacao\ChatApplication.IOC\bin\Debug\net8.0\ChatApplication.IOC.deps.json
 C:\Users\alves\Downloads\ProjetoDeExtensaoEmProgramacao\ChatApplication.IOC\bin\Debug\net8.0\ChatApplication.IOC.dll
 C:\Users\alves\Downloads\ProjetoDeExtensaoEmProgramacao\ChatApplication.IOC\bin\Debug\net8.0\ChatApplication.IOC.pdb
-C:\Users\alves\Downloads\ProjetoDeExtensaoEmProgramacao\ChatApplication.IOC\bin\Debug\net8.0\ChatApplication.Aplication.dll
 C:\Users\alves\Downloads\ProjetoDeExtensaoEmProgramacao\ChatApplication.IOC\bin\Debug\net8.0\ChatApplication.Dommain.dll
 C:\Users\alves\Downloads\ProjetoDeExtensaoEmProgramacao\ChatApplication.IOC\bin\Debug\net8.0\ChatApplication.Infra.dll
-C:\Users\alves\Downloads\ProjetoDeExtensaoEmProgramacao\ChatApplication.IOC\bin\Debug\net8.0\ChatApplication.Aplication.pdb
 C:\Users\alves\Downloads\ProjetoDeExtensaoEmProgramacao\ChatApplication.IOC\bin\Debug\net8.0\ChatApplication.Dommain.pdb
 C:\Users\alves\Downloads\ProjetoDeExtensaoEmProgramacao\ChatApplication.IOC\bin\Debug\net8.0\ChatApplication.Infra.pdb
 C:\Users\alves\Downloads\ProjetoDeExtensaoEmProgramacao\ChatApplication.IOC\obj\Debug\net8.0\ChatApplication.IOC.csproj.AssemblyReference.cache
@@ -60,3 +58,5 @@ C:\Users\alves\Downloads\ProjetoDeExtensaoEmProgramacao\ChatApplication.IOC\obj\
 C:\Users\alves\Downloads\ProjetoDeExtensaoEmProgramacao\ChatApplication.IOC\obj\Debug\net8.0\ref\ChatApplication.IOC.dll
 E:\ProjetoDeExtensaoEmProgramacao\ChatApplication.IOC\bin\Debug\net8.0\ChatApplication.Application.dll
 E:\ProjetoDeExtensaoEmProgramacao\ChatApplication.IOC\bin\Debug\net8.0\ChatApplication.Application.pdb
+C:\Users\alves\Downloads\ProjetoDeExtensaoEmProgramacao\ChatApplication.IOC\bin\Debug\net8.0\ChatApplication.Application.dll
+C:\Users\alves\Downloads\ProjetoDeExtensaoEmProgramacao\ChatApplication.IOC\bin\Debug\net8.0\ChatApplication.Application.pdb

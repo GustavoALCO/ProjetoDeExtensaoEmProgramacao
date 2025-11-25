@@ -52,7 +52,6 @@ C:\Users\alves\Downloads\ProjetoDeExtensaoEmProgramacao\bin\Debug\ChatApplicatio
 C:\Users\alves\Downloads\ProjetoDeExtensaoEmProgramacao\bin\Debug\ChatApplication.webApi.dll
 C:\Users\alves\Downloads\ProjetoDeExtensaoEmProgramacao\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 C:\Users\alves\Downloads\ProjetoDeExtensaoEmProgramacao\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
-C:\Users\alves\Downloads\ProjetoDeExtensaoEmProgramacao\bin\Debug\ChatApplication.Aplication.dll
 C:\Users\alves\Downloads\ProjetoDeExtensaoEmProgramacao\bin\Debug\ChatApplication.IOC.dll
 C:\Users\alves\Downloads\ProjetoDeExtensaoEmProgramacao\bin\Debug\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\alves\Downloads\ProjetoDeExtensaoEmProgramacao\bin\Debug\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -83,7 +82,6 @@ C:\Users\alves\Downloads\ProjetoDeExtensaoEmProgramacao\bin\Debug\Microsoft.Iden
 C:\Users\alves\Downloads\ProjetoDeExtensaoEmProgramacao\bin\Debug\Microsoft.IdentityModel.Logging.dll
 C:\Users\alves\Downloads\ProjetoDeExtensaoEmProgramacao\bin\Debug\Microsoft.IdentityModel.Abstractions.dll
 C:\Users\alves\Downloads\ProjetoDeExtensaoEmProgramacao\bin\Debug\ChatApplication.webApi.pdb
-C:\Users\alves\Downloads\ProjetoDeExtensaoEmProgramacao\bin\Debug\ChatApplication.Aplication.pdb
 C:\Users\alves\Downloads\ProjetoDeExtensaoEmProgramacao\bin\Debug\ChatApplication.IOC.pdb
 C:\Users\alves\Downloads\ProjetoDeExtensaoEmProgramacao\bin\Debug\ChatApplication.Dommain.pdb
 C:\Users\alves\Downloads\ProjetoDeExtensaoEmProgramacao\bin\Debug\ChatApplication.Infra.pdb
@@ -100,3 +98,13 @@ E:\ProjetoDeExtensaoEmProgramacao\bin\Debug\System.Memory.Data.dll
 E:\ProjetoDeExtensaoEmProgramacao\bin\Debug\Azure.Storage.Common.dll
 E:\ProjetoDeExtensaoEmProgramacao\bin\Debug\System.IO.Hashing.dll
 E:\ProjetoDeExtensaoEmProgramacao\bin\Debug\ChatApplication.Application.pdb
+C:\Users\alves\Downloads\ProjetoDeExtensaoEmProgramacao\bin\Debug\ChatApplication.Application.dll
+C:\Users\alves\Downloads\ProjetoDeExtensaoEmProgramacao\bin\Debug\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Users\alves\Downloads\ProjetoDeExtensaoEmProgramacao\bin\Debug\Azure.Core.dll
+C:\Users\alves\Downloads\ProjetoDeExtensaoEmProgramacao\bin\Debug\Azure.Storage.Blobs.dll
+C:\Users\alves\Downloads\ProjetoDeExtensaoEmProgramacao\bin\Debug\Microsoft.Extensions.Diagnostics.Abstractions.dll
+C:\Users\alves\Downloads\ProjetoDeExtensaoEmProgramacao\bin\Debug\System.ClientModel.dll
+C:\Users\alves\Downloads\ProjetoDeExtensaoEmProgramacao\bin\Debug\System.Memory.Data.dll
+C:\Users\alves\Downloads\ProjetoDeExtensaoEmProgramacao\bin\Debug\Azure.Storage.Common.dll
+C:\Users\alves\Downloads\ProjetoDeExtensaoEmProgramacao\bin\Debug\System.IO.Hashing.dll
+C:\Users\alves\Downloads\ProjetoDeExtensaoEmProgramacao\bin\Debug\ChatApplication.Application.pdb

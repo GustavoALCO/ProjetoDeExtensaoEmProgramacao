@@ -29,7 +29,7 @@ public class CreateChatHandler : IRequestHandler<CreateChat>
         string imagePath = "";
 
         if(request.Image != null)
-            imagePath = await _savedImages.UploadBase64ImagesAsync(request.Image, 0);
+            imagePath = await _savedImages.UploadBase64ImagesAsync(request.Image, 1);
 
         // Adiciona os usuarios ao chat
         foreach (var userId in request.UsersIds)
