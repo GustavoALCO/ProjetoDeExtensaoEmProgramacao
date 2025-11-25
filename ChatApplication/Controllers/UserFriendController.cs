@@ -34,4 +34,12 @@ public class UserFriendController : ControllerBase
         var friends = await _mediator.Send(listUserFriends);
         return Ok(friends);
     }
+
+    [HttpDelete("remove")]
+    public async Task<IActionResult> RemoveFriend(RemoverAmizade removeFriendCommand)
+    {
+        await _mediator.Send(removeFriendCommand);
+        return Ok();
+    }
+
 }

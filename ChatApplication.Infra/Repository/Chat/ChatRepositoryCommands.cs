@@ -21,6 +21,13 @@ public class ChatRepositoryCommands : IChatRepositoryCommands
 
     }
 
+    public async Task DeleteChatAsync(Dommain.Entities.Chat chat)
+    {
+        _context.Chat.Remove(chat);
+
+        await _context.SaveChangesAsync();
+    }
+
     public async Task UpdateChatAsync(Dommain.Entities.Chat chat)
     {
         _context.Chat.Update(chat);

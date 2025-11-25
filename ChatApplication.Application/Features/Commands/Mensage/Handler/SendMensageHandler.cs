@@ -28,20 +28,25 @@ public class SendMensageHandler : IRequestHandler<SendMensage, List<string>?>
         // Salva as imagens e obtém as URLs
         List<string> images = new List<string>();
 
-        if (request.ImageMensage != null)
-            images = await _savedImages.UploadListBase64ImagesAsync(request.ImageMensage, 1);
+        if (request.ImageMensage?.Count() > 0)
+            images = await _savedImages.UploadListBase64ImagesAsync(request.ImageMensage, "mensage");
 
-        // Adiciona os usuarios por meio de um loop 
-        foreach (var item in request.Users)
+        if(request.Users?.Count() > 0)
         {
-            status.Add(new MensageStatus
+            // Adiciona os usuarios por meio de um loop 
+            foreach (var item in request.Users)
             {
-                MensageID = id,
-                RecibeUserId = item,
-                IsReceived = false,
-                ReaAt = null
-            });
+                status.Add(new MensageStatus
+                {
+                    MensageID = id,
+                    RecibeUserId = item,
+                    IsReceived = false,
+                    ReaAt = null
+                });
+            }
         }
+        
+        
 
         Dommain.Entities.Mensage mensage = new Dommain.Entities.Mensage()
         {

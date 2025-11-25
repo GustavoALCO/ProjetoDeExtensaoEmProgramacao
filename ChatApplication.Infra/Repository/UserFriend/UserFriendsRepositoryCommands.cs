@@ -33,29 +33,29 @@ public class UserFriendsRepositoryCommands : IUserFriendRepositoryCommands
             CreatedAt = DateTime.UtcNow,
         };
 
-        var friend = await _db.UserFriend.AddAsync(userfriend);
+        _db.UserFriend.Update(userfriend);
 
         await _db.SaveChangesAsync();
 
         _logger.LogInformation($"Convite de Amizade enviado do Usuario {userId}, para o {friendId}. \n A resposta do Amigo foi de {request}");
     }
 
-    //public async Task RemoveFriendAsync(u)
-    //{
-    //    var query = await _query.GetUserFriend(userId, friendId);
+    public async Task RemoveFriendAsync(Guid userId, Guid friendId)
+    {
+        var query = await _query.GetUserFriend(userId, friendId);
 
-    //    if (query == null)
-    //    {
-    //        _logger.LogInformation("Os Usuarios nao sao amigos. entao a operacao nao sera possivel");
-    //        throw new Exception("Os Usuarios nao sao amigos. entao a operacao nao sera possivel");
-    //    }
+        if (query == null)
+        {
+            _logger.LogInformation("Os Usuarios nao sao amigos. entao a operacao nao sera possivel");
+            throw new Exception("Os Usuarios nao sao amigos. entao a operacao nao sera possivel");
+        }
 
-    //    var friend = _db.Remove(query);
+        var friend = _db.Remove(query);
 
-    //    await _db.SaveChangesAsync();
+        await _db.SaveChangesAsync();
 
-    //    _logger.LogInformation($"Convite de Amizade enviado do Usuario {userId}, para o {friendId}. \n A resposta do Amigo foi de ");
-    //}
+        _logger.LogInformation($"Convite de Amizade enviado do Usuario {userId}, para o {friendId}. \n A resposta do Amigo foi de ");
+    }
 
     public async Task RequestFriendshipAsync(Guid userId, Guid friendId)
     {
@@ -71,4 +71,5 @@ public class UserFriendsRepositoryCommands : IUserFriendRepositoryCommands
 
         await _db.SaveChangesAsync();
     }
+
 }

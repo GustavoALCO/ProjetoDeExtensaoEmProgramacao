@@ -218,17 +218,21 @@ namespace ChatApplication.Infra.Migrations
 
             modelBuilder.Entity("ChatApplication.Dommain.Entities.UserFriend", b =>
                 {
-                    b.HasOne("ChatApplication.Dommain.Entities.User", null)
-                        .WithMany()
+                    b.HasOne("ChatApplication.Dommain.Entities.User", "Friend")
+                        .WithMany("FriendOf")
                         .HasForeignKey("FriendId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
-                    b.HasOne("ChatApplication.Dommain.Entities.User", null)
-                        .WithMany()
+                    b.HasOne("ChatApplication.Dommain.Entities.User", "User")
+                        .WithMany("Friends")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
+
+                    b.Navigation("Friend");
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("ChatApplication.Dommain.Entities.Chat", b =>
@@ -246,6 +250,10 @@ namespace ChatApplication.Infra.Migrations
             modelBuilder.Entity("ChatApplication.Dommain.Entities.User", b =>
                 {
                     b.Navigation("ChatUsers");
+
+                    b.Navigation("FriendOf");
+
+                    b.Navigation("Friends");
                 });
 #pragma warning restore 612, 618
         }

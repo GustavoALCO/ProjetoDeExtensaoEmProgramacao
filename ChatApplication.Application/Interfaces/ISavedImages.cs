@@ -2,9 +2,9 @@
 
 public interface ISavedImages
 {
-    public Task<string> UploadBase64ImagesAsync(string base64Images, int indiceContainer);
+    public Task<string> UploadBase64ImagesAsync(string base64Images, string container);
 
-    public Task<List<string>> UploadListBase64ImagesAsync(List<string> base64Images, int indiceContainer);
+    public Task<List<string>> UploadListBase64ImagesAsync(List<string> base64Images, string indiceContainer);
 
     public Task DeleteImagesAsync(string imageNames, int indiceContainer);
 

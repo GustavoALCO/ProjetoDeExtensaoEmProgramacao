@@ -8,5 +8,5 @@ public class FriendshipAction : IRequest
 
     public Guid FriendId { get; set; }
 
-    
+    public bool response { get; set; }
 }

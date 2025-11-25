@@ -1,14 +1,9 @@
-﻿using MediatR;
+﻿using ChatApplication.Dommain.Entities;
+using MediatR;
 
 namespace ChatApplication.Application.Features.Commands.Users;
 
 public class CriarUsuario : IRequest
 {
-    public required string Username { get; set; }
-
-    public required string Password { get; set; }
-
-    public string? Description { get; set; }
-
-    public string? Image { get; set; }
+    public User User { get; set; }
 }

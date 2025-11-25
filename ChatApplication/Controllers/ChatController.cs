@@ -22,14 +22,14 @@ public class ChatController : ControllerBase
     }
 
     [HttpGet("findall")]
-    public async Task<IActionResult> GetChats(FindAllChats findAllChats)
+    public async Task<IActionResult> GetChats([FromQuery]FindAllChats findAllChats)
     {
         var result = await _mediator.Send(findAllChats);
         return Ok(result);
     }
 
     [HttpGet("findbyid/{id}")]
-    public async Task<IActionResult> GetChatById(FindChatID query)
+    public async Task<IActionResult> GetChatById([FromQuery] FindChatID query)
     {
 
         var result = await _mediator.Send(query);
@@ -37,7 +37,7 @@ public class ChatController : ControllerBase
     }
 
     [HttpGet("findname")]
-    public async Task<IActionResult> GetChatsByUserId(FindNameChats query)
+    public async Task<IActionResult> GetChatsByUserId([FromQuery] FindNameChats query)
     {
         var result = await _mediator.Send(query);
         return Ok(result);

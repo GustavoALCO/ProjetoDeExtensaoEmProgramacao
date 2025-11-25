@@ -22,13 +22,19 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 
 builder.Services.AddInfra(builder.Configuration);
+
 builder.Services.Authentication(builder.Configuration);
+
 builder.Services.AddInterfaces();
+
 builder.Services.AddInterfacesServices();
-builder.Services.AddInterfacesValidators();
+
 builder.Services.AddFluentValidate();
+
 builder.Services.AddMediator();
+
 builder.Services.AddSignalR();
+
 builder.Services.AddSwagger();
 
 var app = builder.Build();

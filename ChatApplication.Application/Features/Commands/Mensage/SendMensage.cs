@@ -14,6 +14,6 @@ public class SendMensage : IRequest<List<string>?>
 
     public DateTime Mensage { get; set; }
 
-    public List<Guid> Users { get; set; }
+    public List<Guid>? Users { get; set; }
 
 }

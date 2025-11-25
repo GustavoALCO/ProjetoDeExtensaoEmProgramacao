@@ -4,13 +4,22 @@ namespace ChatApplication.webApi.Service;
 
 public class SignalRServices : Hub
 {
-   
-    public async Task SendMensageToUserAsync(Guid chatid, Guid userId, string? content, List<string>? images)
+    private readonly IHubContext<SignalRServices> _hubContext;
+
+    public SignalRServices(IHubContext<SignalRServices> hubContext)
     {
-        await Clients.Group(chatid.ToString())
-            .SendAsync("ReceiveMensage", new
+        _hubContext = hubContext;
+    }
+
+    public async Task SendMessageToUserAsync(Guid chatId, Guid userId, string? content, List<string>? images)
+    {
+        // Evita null reference
+        images ??= new List<string>();
+
+        await _hubContext.Clients.Group(chatId.ToString())
+            .SendAsync("ReceiveMessage", new
             {
-                ChatId = chatid,
+                ChatId = chatId,
                 UserId = userId,
                 Content = content,
                 Images = images

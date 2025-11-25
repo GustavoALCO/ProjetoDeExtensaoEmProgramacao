@@ -6,4 +6,6 @@ public interface IChatRepositoryCommands
 
     public Task UpdateChatAsync(Dommain.Entities.Chat chat);
 
+    public Task DeleteChatAsync(Dommain.Entities.Chat chat);
+
 }

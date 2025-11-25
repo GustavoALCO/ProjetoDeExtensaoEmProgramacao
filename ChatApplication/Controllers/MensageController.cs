@@ -21,7 +21,7 @@ public class MensageController : ControllerBase
     public async Task<IActionResult> SendMessage(SendMensage sendMensage)
     {
         var images = await _mediator.Send(sendMensage);
-        await _signalRServices.SendMensageToUserAsync(sendMensage.ChatId, sendMensage.UserId, sendMensage.Content, images);
+        await _signalRServices.SendMessageToUserAsync(sendMensage.ChatId, sendMensage.UserId, sendMensage.Content, images);
         return Ok();
     }
 

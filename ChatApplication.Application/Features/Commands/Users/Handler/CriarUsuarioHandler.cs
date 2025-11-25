@@ -23,24 +23,12 @@ public class CriarUsuarioHandler : IRequestHandler<CriarUsuario>
 
     public async Task Handle(CriarUsuario request, CancellationToken cancellationToken)
     {
-        string image = string.Empty;
+        var image= await _savedImages.UploadBase64ImagesAsync(request.User.Image, "user");
 
-        if (request.Image != null)
-             image = await _savedImages.UploadBase64ImagesAsync(request.Image, 0);
-
-        var user = new User
-        {
-            UserId = Guid.NewGuid(),
-            Username = request.Username,
-            Password = request.Password,
-            Description = request.Description,
-            Image = image,
-            IsValid = true,
-            CreateData = DateTime.UtcNow.AddHours(-3)
-        };
+        request.User.Image = image;
 
         _logger.LogInformation("Usuário criado com sucesso");
 
-        await _commands.CreateUser(user);
+        await _commands.CreateUser(request.User);
     }
 }

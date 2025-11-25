@@ -26,7 +26,7 @@ public class AlterarImagemHandler : IRequestHandler<AlterarImagem>
         if(user.Image != null)
             await _Image.DeleteImagesAsync(user.Image, 0);
 
-        var imagePath = await _Image.UploadBase64ImagesAsync(request.Base64Image, 0);
+        var imagePath = await _Image.UploadBase64ImagesAsync(request.Base64Image, "user");
 
         user.Image = imagePath;
 

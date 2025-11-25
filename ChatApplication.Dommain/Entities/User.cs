@@ -21,4 +21,9 @@ public class User
     public DateTime CreateData { get; set; }
 
     public ICollection<ChatUsers> ChatUsers { get; set; }
+
+    public ICollection<UserFriend> Friends { get; set; }
+
+    // Solicitações recebidas
+    public ICollection<UserFriend> FriendOf { get; set; }
 }

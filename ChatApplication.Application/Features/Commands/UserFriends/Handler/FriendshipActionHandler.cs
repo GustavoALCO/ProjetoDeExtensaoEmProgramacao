@@ -24,6 +24,6 @@ public class FriendshipActionHandler : IRequestHandler<FriendshipAction>
             throw new Exception("Usuarios ja sao amigos");
         }
         
-        await _commands.RequestFriendshipAsync(request.UserId, request.FriendId, true);
+        await _commands.RequestFriendshipAsync(request.UserId, request.FriendId, request.response);
     }
 }

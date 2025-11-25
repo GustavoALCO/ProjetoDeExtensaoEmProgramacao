@@ -3,8 +3,6 @@ using ChatApplication.Application.Features.Commands.Users;
 using ChatApplication.Application.Interfaces;
 using ChatApplication.Application.Service;
 using ChatApplication.Application.Settings;
-using ChatApplication.Application.Validations.Mensage;
-using ChatApplication.Application.Validations.User;
 using ChatApplication.Dommain.Interfaces.Chat;
 using ChatApplication.Dommain.Interfaces.Mensage;
 using ChatApplication.Dommain.Interfaces.MensageStatus;
@@ -33,37 +31,14 @@ public static class DependencyInjection
 {
     public static IServiceCollection AddInfra(this IServiceCollection services, IConfiguration configuration)
     {
-        // Lê a seção BDSettings do appsettings.json
-        var bdSettings = new BDSettings();
-        configuration.GetSection("BDSettings").Bind(bdSettings);
-
-        string connectionString =
-            $"Host={bdSettings.Host};" +
-            $"Port={bdSettings.Port};" +
-            $"Database={bdSettings.Database};" +
-            $"Username={bdSettings.Username};" +
-            $"Password={bdSettings.Password};";
-
-        services.AddDbContext<ContextDB>(options =>
-        {
-            options.UseNpgsql(connectionString, npgsqlOptions =>
-            {
-                npgsqlOptions.MigrationsAssembly(typeof(ContextDB).Assembly.FullName);
-            });
-        });
-
-        // Registra o BDSettings no DI (caso precise em outras classes)
-        services.Configure<BDSettings>(configuration.GetSection("BDSettings"));
-
-        return services;
-    }
-
-    public static IServiceCollection AddInterfacesValidators(this IServiceCollection services)
-    {
-
-        services.AddScoped<IValidator<CriarUsuario>, CriarUsuarioValidate>();
-
-        services.AddScoped<IValidator<SendMensage>, EnviarMensagemValidate>();
+        // Registra o DbContext no DI usando PostgreSQL
+        services.AddDbContext<ContextDB>(static options =>
+            options.UseNpgsql("Host=postgres-db;Port=5432;Database=chatdb;Username=chatuser;Password=Teste123",
+                  npgsqlOptions =>
+                  {
+                      npgsqlOptions.MigrationsAssembly(typeof(ContextDB).Assembly.FullName);
+                  })
+        );
 
         return services;
     }

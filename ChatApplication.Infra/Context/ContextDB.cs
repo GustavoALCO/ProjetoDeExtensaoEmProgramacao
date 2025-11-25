@@ -38,19 +38,17 @@ public class ContextDB : DbContext
 
         // Definindo a chave primária composta para a entidade UserFriend
         modelBuilder.Entity<UserFriend>()
-            .HasKey(cu => new { cu.UserId, cu.FriendId });
+    .HasKey(uf => new { uf.UserId, uf.FriendId });
 
-        // Definindo o relacionamento entre UserFriend e User para UserId
         modelBuilder.Entity<UserFriend>()
-            .HasOne<User>()
-            .WithMany()
-            .HasForeignKey(cu => cu.UserId)
+            .HasOne(uf => uf.User)
+            .WithMany(u => u.Friends)
+            .HasForeignKey(uf => uf.UserId)
             .OnDelete(DeleteBehavior.Restrict);
 
-        // Definindo o relacionamento entre UserFriend e User para FriendId
         modelBuilder.Entity<UserFriend>()
-            .HasOne<User>()
-            .WithMany()
+            .HasOne(uf => uf.Friend)
+            .WithMany(u => u.FriendOf)
             .HasForeignKey(uf => uf.FriendId)
             .OnDelete(DeleteBehavior.Restrict);
 

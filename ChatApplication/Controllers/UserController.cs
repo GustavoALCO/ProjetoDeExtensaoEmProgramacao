@@ -1,9 +1,13 @@
-﻿using ChatApplication.Aplication.Features.Querys.Users;
+﻿using Azure.Core;
+using ChatApplication.Aplication.Features.Querys.Users;
 using ChatApplication.Application.Features.Commands.Users;
 using ChatApplication.Application.Features.Querys.Users;
+using ChatApplication.Dommain.Entities;
+using ChatApplication.webApi.Dtos;
 using ChatApplication.webApi.Interfaces;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace ChatApplication.webApi.Controllers;
 
@@ -20,6 +24,27 @@ public class UserController : ControllerBase
         _mediator = mediator;
         _hash = hash;
         _jwt = jwt;
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> CreateUser([FromBody] CreateUserDTO createUser)
+    {
+        var user = new User
+        {
+            UserId = Guid.NewGuid(),
+            Username = createUser.Username,
+            Password = createUser.Password,
+            Description = createUser.Description,
+            Image = createUser.Image,
+            IsValid = true,
+            CreateData = DateTime.UtcNow.AddHours(-3)
+        };
+
+        user.Password = _hash.Hash(user, createUser.Password);
+
+        await _mediator.Send(new CriarUsuario { User = user});
+
+        return Ok();
     }
 
     [HttpPost("login")]

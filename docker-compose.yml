@@ -7,9 +7,9 @@ services:
     depends_on:
       - postgres-db
     environment:
-      - ConnectionStrings__DefaultConnection=Host=postgres-db;Port=5433;Database=authdb;Username=authuser;Password=Teste123
+      - ConnectionStrings__DefaultConnection=Host=postgres-db;Port=5432;Database=chatdb;Username=chatuser;Password=Teste123
     ports:
-      - "8081:8081" 
+      - "8081:8081"
     tty: true
 
   postgres-db:
@@ -21,7 +21,6 @@ services:
     ports:
       - "5432:5432"
     volumes:
-    #funciona para armazenar os dados no banco de dados mesmo que o container seja parado 
       - pgdata:/var/lib/postgresql/data
 
 volumes:
